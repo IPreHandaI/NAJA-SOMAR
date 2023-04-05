@@ -1,0 +1,101 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: #004a8d;
+    height: 41vh;
+}
+.coluna1 {
+  width: 48%;
+  float: left;
+  text-align: center;
+}
+
+.coluna2 {
+  width: 26%;
+  float: left;
+  text-align: center;
+}
+
+.coluna3 {
+  width: 26%;
+  float: left;
+  text-align: center;
+}
+
+.coluna1 .linha1 {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coluna1 .subcol1 {
+  width: 100%;
+  float: left;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coluna1 .subcol1 #logoInsta,
+.coluna1 .subcol1 #logoFace,
+.coluna1 .subcol1 #logoYT {
+  width: 5vw;
+  height: auto;
+  margin-right: 8vw;
+}
+
+.coluna1 .subcol1 #logoYT {
+  max-width: 100%;
+  width: 3vw;
+  height: auto;
+  margin-right: 0;
+}
+
+.coluna1 .subcol1 #logoFace {
+  max-width: 100%;
+  width: 3vw;
+  height: auto;
+}
+
+.coluna1 .subcol1 #logoInsta {
+    max-width: 100%;
+    width: 3vw;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .coluna1 .subcol1,
+    .coluna1 .subcol2,
+    .coluna1 .subcol3 {
+      width: 100%;
+      float: none;
+    }
+}
+
+.coluna1 .linha2 {
+  height: 24vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coluna2 .linha,
+.coluna3 .linha {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+}
+
+.coluna1 a,
+.coluna2 a,
+.coluna3 a{
+  color: white;
+}
