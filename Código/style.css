@@ -1,8 +1,113 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*===================HEADER======================*/
+
+.colsheader {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headercol {
+  display: block;
+  line-height: 10vh;
+  text-align: center;
+  background-color: #004a8d;
+  margin: 0;
+}
+
+.colsheader .headercol1{
+  vertical-align: middle;
+  text-align: left;
+  width: 52%;
+}
+
+.colsheader .headercol2,
+.colsheader .headercol3,
+.colsheader .headercol4,
+.colsheader .headercol5{
+  width: 12%;
+}
+
+/*=================DROPWDOWN===============*/
+
+/* Posicione o dropdown */
+.headercol2 .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo do botão do dropdown */
+.headercol2 .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo do conteúdo do dropdown */
+.headercol2 .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Estilo dos links no dropdown */
+.headercol2 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Mudança de estilo ao passar o mouse */
+.headercol2 .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Exiba o dropdown quando o mouse passa sobre o botão */
+.headercol2 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilo do dropdown aberto */
+.headercol2 .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================FOOTER========================*/
 
 footer {
     background-color: #004a8d;
