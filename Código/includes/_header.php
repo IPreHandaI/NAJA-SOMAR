@@ -10,9 +10,9 @@ include_once '../includes/_head.php';
             <div class="dropdown">
                 <button class="dropbtn">Dropdown</button>
                 <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                    <a class="link1" href="#">Link 1</a>
+                    <a id="link2" href="#">Link 2</a>
+                    <a id="link3" href="#">Link 3</a>
                 </div>
             </div>
         </div>

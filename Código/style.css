@@ -34,30 +34,34 @@
 
 /*=================DROPWDOWN===============*/
 
-/* Posicione o dropdown */
-.headercol2 .dropdown {
-  position: relative;
-  display: inline-block;
-}
 
-/* Estilo do botão do dropdown */
+
 .headercol2 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #004a8d;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  border-radius: 10%;
 }
 
-/* Estilo do conteúdo do dropdown */
 .headercol2 .dropdown-content {
   display: none;
   position: absolute;
   z-index: 1;
 }
 
-/* Estilo dos links no dropdown */
+
+.link1{
+  animation: cachoeira 1s;
+}
+@keyframes cachoeira{
+  0% { opacity: 0; };
+  50% { opacity: 0.5; };
+  100% { opacity: 1; };
+}
+
 .headercol2 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -65,31 +69,18 @@
   display: block;
 }
 
-/* Mudança de estilo ao passar o mouse */
 .headercol2 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
 
-/* Exiba o dropdown quando o mouse passa sobre o botão */
 .headercol2 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Estilo do dropdown aberto */
 .headercol2 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #00396e;
+  border-radius: 10%;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
