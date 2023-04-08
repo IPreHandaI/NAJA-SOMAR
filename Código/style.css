@@ -99,6 +99,7 @@ header{
 @keyframes cachoeira1{
   0% { 
     opacity: 0;
+    margin: -5vw 0 0 0;
     };
   50% { opacity: 0.5;};
   100% { opacity: 1;};
