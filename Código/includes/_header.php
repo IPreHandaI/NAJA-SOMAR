@@ -8,8 +8,10 @@ include_once '../includes/_head.php';
             <div>Logo</div>
         </div>
         <div class="headercol headercol2">
-            <div class="dropdown2">
-            <div class="dropdown-header2">Selecione</div>
+            <div class="dropdown1">
+            <div class="dropdown-header2">
+                <a>Selecione</a>
+            </div>
                 <div class="dropdown-options2">
                     <div class="dropdown-option2 option1" value="opcao1">
                         <p>Opção 1</p>    
@@ -38,7 +40,7 @@ include_once '../includes/_head.php';
             </div>
         </div>
         <div class="headercol headercol4">
-            <div class="dropdown2">
+            <div class="dropdown3">
                 <div class="dropdown-header2">Selecione</div>
                 <div class="dropdown-options2">
                     <div class="dropdown-option2 option1" value="opcao1">Opção 1</div>
@@ -49,7 +51,7 @@ include_once '../includes/_head.php';
             </div>
         </div>
         <div class="headercol headercol5">
-            <div class="dropdown2">
+            <div class="dropdown4">
                 <div class="dropdown-header2">Selecione</div>
                 <div class="dropdown-options2">
                     <div class="dropdown-option2 option1" value="opcao1">Opção 1</div>

@@ -43,12 +43,16 @@ header{
 
 
 
-.dropdown2 {
+.dropdown1,
+.dropdown2,
+.dropdown3,
+.dropdown4 {
   position: relative;
   display: inline-block;
 }
 
 /*Estilo do  dropdown*/
+
 .dropdown-header2 {
   font-size: 16px;
   border: 1px solid #004a8d;
@@ -64,7 +68,10 @@ header{
 }
 
 /*Deixando o :hover funcionando quando o usuário passa o mouse pela opções*/
+.dropdown-header1:hover, 
 .dropdown-header2:hover, 
+.dropdown-header3:hover, 
+.dropdown-header4:hover, 
 .dropdown2:hover .dropdown-header2 {
   background-color: #012344;
   color: #fff;
@@ -124,7 +131,10 @@ header{
 }
 
 /*Fazendo o dropdown aparecer*/
-.dropdown2:hover .dropdown-options2 {
+.dropdown1:hover .dropdown-options2,
+.dropdown2:hover .dropdown-options2,
+.dropdown3:hover .dropdown-options2,
+.dropdown4:hover .dropdown-options2 {
   display: block;
 }
 
@@ -150,6 +160,7 @@ header{
   border-radius: 5%;
   z-index: 1;
 }
+
 
 
 
