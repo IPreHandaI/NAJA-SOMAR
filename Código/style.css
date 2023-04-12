@@ -8,6 +8,7 @@
 
 header{
   margin: 0 0 1rem 0;
+  height: 5vh;
 }
 
 .colsheader {
@@ -17,8 +18,8 @@ header{
 
 .headercol {
   display: inline-block;
-  line-height: 10vh;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   background-color: #004a8d;
 }
 
@@ -54,17 +55,22 @@ header{
 /*Estilo do  dropdown*/
 
 .dropdown-header2 {
-  font-size: 1rem;
-  border: 1px solid #004a8d;
-  border-radius: 5px;
+  font-size: small;
   background-color: #004a8d;
   color: white;
   width: 10vw;
-  height: 10vh;
+  height: 5vh;
   cursor: pointer;
   z-index: 2;
   position: inherit;
   word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-header2 .dropdown-options2 p{
+  font-size: 5px;
 }
 
 /*Deixando o :hover funcionando quando o usuário passa o mouse pela opções*/
@@ -74,6 +80,7 @@ header{
 .dropdown-header4:hover, 
 .dropdown2:hover .dropdown-header2 {
   background-color: #012344;
+  height: 5vh;
   color: #fff;
 }
 
@@ -84,6 +91,7 @@ header{
   top: 100%;
   left: 0;
   z-index: 1;
+  font-size: small;
 }
 
 .option1{
@@ -141,8 +149,8 @@ header{
 /*Dando tamanho ao botão de opção*/
 .dropdown-option2 {
   padding: 5px;
-  width: 9.2vw;
-  height: 9vh;
+  width: 8.9vw;
+  height: 4vh;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5%;

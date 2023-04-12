@@ -6,6 +6,8 @@ include_once 'includes/_header.php';
 ?>
 <div id="divPai">
     <div id="divFilho">
+
+    <!--========================CAROUSEL===============================-->
         <div class="slider">
             <div class="slides">
                 <!-- Bolinhas -->
@@ -43,8 +45,9 @@ include_once 'includes/_header.php';
                 <label for="radio3" class="manual-btn"></label>
                 <label for="radio4" class="manual-btn"></label>
             </div>
-
         </div>
+<!--==================FIM DO CAROUSEL=====================-->
+        
     </div>
 </div>
 
