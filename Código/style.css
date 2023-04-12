@@ -21,25 +21,36 @@ header{
   justify-content: center;
   align-items: center;
   background-color: #004a8d;
+  width: 100%;
 }
 
 .colsheader .headercol1{
-  vertical-align: middle;
+  align-content: center;
+  line-height: 4vh;
   text-align: left;
-  width: 52%;
+  width: 50%;
+  font-size: small;
   color: white;
+}
+
+#logo{
+  width: 2vw;
+  height: auto;
+  margin: 0 0 0 1rem;
 }
 
 .colsheader .headercol2,
 .colsheader .headercol3,
 .colsheader .headercol4,
 .colsheader .headercol5{
-  width: 12%;
+  width: 25%;
 }
 
 
-
-
+.colsheader {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 /*=================DROPWDOWN===============*/
@@ -54,11 +65,12 @@ header{
 
 /*Estilo do  dropdown*/
 
+.dropdown-header1,
 .dropdown-header2 {
   font-size: small;
   background-color: #004a8d;
   color: white;
-  width: 10vw;
+  width: 24.6vw;
   height: 5vh;
   cursor: pointer;
   z-index: 2;
@@ -69,6 +81,7 @@ header{
   align-items: center;
 }
 
+.dropdown-header1 .dropdown-options2 p,
 .dropdown-header2 .dropdown-options2 p{
   font-size: 5px;
 }
@@ -76,8 +89,7 @@ header{
 /*Deixando o :hover funcionando quando o usuário passa o mouse pela opções*/
 .dropdown-header1:hover, 
 .dropdown-header2:hover, 
-.dropdown-header3:hover, 
-.dropdown-header4:hover, 
+.dropdown1:hover .dropdown-header2,
 .dropdown2:hover .dropdown-header2 {
   background-color: #012344;
   height: 5vh;
@@ -140,18 +152,16 @@ header{
 
 /*Fazendo o dropdown aparecer*/
 .dropdown1:hover .dropdown-options2,
-.dropdown2:hover .dropdown-options2,
-.dropdown3:hover .dropdown-options2,
-.dropdown4:hover .dropdown-options2 {
+.dropdown2:hover .dropdown-options2 {
   display: block;
 }
 
 /*Dando tamanho ao botão de opção*/
 .dropdown-option2 {
   padding: 5px;
-  width: 8.9vw;
+  width: 23.5vw;
   height: 4vh;
-  font-size: 16px;
+  font-size: small;
   border: 1px solid #ccc;
   border-radius: 5%;
   background-color: #fff;
@@ -162,7 +172,8 @@ header{
 
 
 /*:hover das opções*/
-.dropdown-option2:hover {
+.dropdown-option1:hover 
+.dropdown-option2:hover{
   background-color: #f2f2f2;
   cursor: pointer;
   border-radius: 5%;
@@ -170,20 +181,18 @@ header{
 }
 
 @media screen and (max-width: 703px){
+  .dropdown-header1,
   .dropdown-header2{
     width: 15vw;
     font-size: 1rem;
   }
 
   .colsheader .headercol1{
-    width: 42%;
+    width: 40%;
   }
 
-  .colsheader .headercol2,
-  .colsheader .headercol3,
-  .colsheader .headercol4,
-  .colsheader .headercol5{
-    width: 14.5%;
+  .colsheader .headercol2{
+    width: 30%;
   }
 
 }
@@ -324,6 +333,84 @@ header{
   background-color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+
+  .slide img{
+    width: 400px;
+  }
+
+  .slider{
+    height: 200px;
+  }
+  
+  .slides{
+    height: 200px;
+  }
+
+  .manual-btn{
+    padding: 3px;
+  }
+
+  .navigation-auto div{
+    padding: 3px;
+  }
+
+  .manual-navigation{
+    margin: -16px 0 0 0;
+  }
+
+  .navigation-auto{
+    margin: 11.5rem 0 0 0;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+
+  .slide img{
+    width: 200px;
+  }
+
+  .slider{
+    height: 100px;
+  }
+  
+  .slides{
+    height: 100px;
+  }
+
+  .manual-btn{
+    padding: 2px;
+  }
+
+  .navigation-auto div{
+    padding: 2px;
+  }
+
+  .manual-navigation{
+    margin: -10px 0 0 0;
+  }
+
+  .navigation-auto{
+    margin: 5.6rem 0 0 0;
+  }
+
+}
+
+
+/*========================CARDS=========================*/
+
+.card-deck{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
 
 
 
@@ -400,15 +487,6 @@ footer {
     height: auto;
 }
 
-@media (max-width: 768px) {
-    .coluna1 .subcol1,
-    .coluna1 .subcol2,
-    .coluna1 .subcol3 {
-      width: 100%;
-      float: none;
-    }
-}
-
 .coluna1 .linha2 {
   height: 24vh;
   display: flex;
@@ -422,11 +500,120 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8vh;
 }
 
 .coluna1 a,
 .coluna2 a,
 .coluna3 a{
   color: white;
+}
+
+@media screen and (max-width: 2560px) {
+  .linha2{
+    display: none;
+  }
+
+  .linha3 .subcol1 img{
+    margin: 0 0 100px 0;
+  }
+
+  .coluna1 .subcol1 #logoYT {
+    width: 4vw;
+    height: auto;
+  }
+  
+  .coluna1 .subcol1 #logoFace {
+    width: 4vw;
+    height: auto;
+  }
+  
+  .coluna1 .subcol1 #logoInsta {
+      width: 4vw;
+      height: auto;
+  }
+
+  .coluna2 .linha,
+  .coluna3 .linha{
+    padding: 0 0 10px 0;
+  }
+
+  .coluna2 a,
+  .coluna3 a{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #logo{
+    width: 2.6vw;
+    margin: 0.5px 0 0 1rem;
+  }
+
+  .coluna1 a,
+  .coluna2 a,
+  .coluna3 a{
+    font-size: 13px;
+  }
+
+  .coluna2,
+  .coluna3{
+    margin: 5px 0 0 0;
+  }
+
+  .coluna2 .linha,
+  .coluna3 .linha{
+    margin: 5px 0 0 0;
+    padding: 0 0 3px 0;
+  }
+
+  .linha2{
+    margin: 0 0 2rem 0;
+  }
+
+  .coluna1 .subcol1 #logoInsta,
+  .coluna1 .subcol1 #logoFace,
+  .coluna1 .subcol1 #logoYT{
+    width: 8vw;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  footer{
+    height: 25vh;
+  }
+
+  #logo{
+    width: 4vw;
+    margin: 5px 0 0 1rem;
+  }
+
+  .linha2{
+    margin: 0;
+  }
+
+  .coluna1 .subcol1 #logoInsta,
+  .coluna1 .subcol1 #logoFace,
+  .coluna1 .subcol1 #logoYT{
+    margin-bottom: 12rem;
+    width: 7vw;
+  }
+
+  .coluna1 a,
+  .coluna2 a,
+  .coluna3 a{
+    font-size: 10px;
+  }
+
+  .coluna2 .linha,
+  .coluna3 .linha{
+    margin: -12px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #logo{
+    width: 5vw;
+    margin: 3px 0 0 1rem;
+  }
 }

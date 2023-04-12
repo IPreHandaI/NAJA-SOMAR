@@ -8,7 +8,6 @@
                 <a>Linha 1, Coluna 1</a>
             </div>
             <div class="linha2">
-                <a></a>    
             </div>
             <div class="linha3">
                 <div class="subcol1">

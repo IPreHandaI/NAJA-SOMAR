@@ -46,10 +46,51 @@ include_once 'includes/_header.php';
                 <label for="radio4" class="manual-btn"></label>
             </div>
         </div>
-<!--==================FIM DO CAROUSEL=====================-->
-        
     </div>
 </div>
+<!--==================FIM DO CAROUSEL=====================-->
+
+
+
+
+<!--=====================CARDS======================-->
+    <div class="card-deck">
+        <div class="card">
+            <img src="imagem-1.jpg" class="card-img-top" alt="Imagem 1">
+            <div class="card-body">
+            <h5 class="card-title">Título do Card 1</h5>
+            <p class="card-text">Texto descritivo do Card 1.</p>
+            <a href="#" class="btn btn-primary">Botão de Ação 1</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="imagem-2.jpg" class="card-img-top" alt="Imagem 2">
+            <div class="card-body">
+            <h5 class="card-title">Título do Card 2</h5>
+            <p class="card-text">Texto descritivo do Card 2.</p>
+            <a href="#" class="btn btn-primary">Botão de Ação 2</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="imagem-3.jpg" class="card-img-top" alt="Imagem 3">
+            <div class="card-body">
+            <h5 class="card-title">Título do Card 3</h5>
+            <p class="card-text">Texto descritivo do Card 3.</p>
+            <a href="#" class="btn btn-primary">Botão de Ação 3</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="imagem-4.jpg" class="card-img-top" alt="Imagem 4">
+            <div class="card-body">
+            <h5 class="card-title">Título do Card 4</h5>
+            <p class="card-text">Texto descritivo do Card 4.</p>
+            <a href="#" class="btn btn-primary">Botão de Ação 4</a>
+            </div>
+        </div>
+    </div>
 
 <?php
 include_once 'includes/_footer.php';
