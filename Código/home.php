@@ -19,13 +19,13 @@ include_once 'includes/_header.php';
                     <img src="./imagens/ImgSemImg.png" alt="Img1">
                 </div>
                 <div class="slide">
-                    <img src="./imagens/ImgSemImg.png" alt="Img1">
+                    <img src="./imagens/ImgSemImg2.jfif" alt="Img2">
                 </div>
                 <div class="slide">
-                    <img src="./imagens/ImgSemImg.png" alt="Img1">
+                    <img src="./imagens/ImgSemImg.png" alt="Img3">
                 </div>
                 <div class="slide">
-                    <img src="./imagens/ImgSemImg.png" alt="Img1">
+                    <img src="./imagens/ImgSemImg2.jfif" alt="Img4">
                 </div>
 
                 <!--AutoNavegação-->
