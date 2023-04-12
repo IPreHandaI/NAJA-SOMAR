@@ -6,12 +6,6 @@
 
 /*===================HEADER======================*/
 
-header{
-  z-index: 2;
-  position: fixed;
-  width: 100%;
-}
-
 .colsheader {
   display: flex;
   flex-wrap: wrap;
@@ -162,12 +156,71 @@ header{
 }
 
 
+/*==================MAIN===================*/
+#divPai{
+  width: 95%;
+  margin: 0 auto;
+}
 
+#divFilho{
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/*=================CAROUSEL======================*/
+.slider{
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 
+.slides{
+  width: 400%;
+  height: auto;
+  display: flex;
+}
 
+.slides input{
+  display: none;
+}
 
+.slide{
+  width: 25%;
+  position: relative;
+}
 
+.slide img{
+  width: 100%;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 95%;
+  margin: -40px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual-btn{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius:  10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 1rem;
+}
+
+.manual-btn:hover{
+  background-color: white;
+}
 
 
 /*====================FOOTER========================*/

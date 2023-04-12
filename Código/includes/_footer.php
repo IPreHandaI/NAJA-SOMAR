@@ -1,7 +1,7 @@
 <?php
-    include_once '../includes/_head.php';
+    include_once 'includes/_head.php';
 ?>
-        
+    </main>
         <footer>
             <div class="coluna1">
             <div class="linha1">
@@ -12,9 +12,9 @@
             </div>
             <div class="linha3">
                 <div class="subcol1">
-                    <img src="../imagens/instagram.png" id="logoInsta">
-                    <img src="../imagens/facebook.png" id="logoFace">
-                    <img src="../imagens/youtube.png" id="logoYT">
+                    <img src="imagens/instagram.png" id="logoInsta">
+                    <img src="imagens/facebook.png" id="logoFace">
+                    <img src="imagens/youtube.png" id="logoYT">
                 </div>
             </div>
             </div>
@@ -53,8 +53,5 @@
                 </div>
             </div>
         </footer>
-
-
     </body>
-
 </html>

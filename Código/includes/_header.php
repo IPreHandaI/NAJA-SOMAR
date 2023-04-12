@@ -1,5 +1,5 @@
 <?php
-include_once '../includes/_head.php';
+include_once 'includes/_head.php';
 ?>
 
 <header>
@@ -62,4 +62,6 @@ include_once '../includes/_head.php';
             </div>
         </div>
     </div>
+
 </header>
+<main>
