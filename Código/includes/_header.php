@@ -14,7 +14,7 @@ include_once 'includes/_head.php';
             </div>
                 <div class="dropdown-options2">
                     <div class="dropdown-option2 option1" value="opcao1">
-                        <p>Opção 1</p>    
+                        <p id="p">Opção 1</p>    
                     </div>
                     <div class="dropdown-option2 option2" value="opcao2">
                         <p>Opção 2</p>

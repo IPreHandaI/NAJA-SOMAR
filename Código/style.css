@@ -6,6 +6,10 @@
 
 /*===================HEADER======================*/
 
+header{
+  margin: 0 0 1rem 0;
+}
+
 .colsheader {
   display: flex;
   flex-wrap: wrap;
@@ -32,10 +36,12 @@
   width: 12%;
 }
 
+
+
+
+
+
 /*=================DROPWDOWN===============*/
-
-
-
 
 .dropdown1,
 .dropdown2,
@@ -48,7 +54,7 @@
 /*Estilo do  dropdown*/
 
 .dropdown-header2 {
-  font-size: 16px;
+  font-size: 10px;
   border: 1px solid #004a8d;
   border-radius: 5px;
   background-color: #004a8d;
@@ -142,7 +148,7 @@
   border-radius: 5%;
   background-color: #fff;
   color: #333;
-  margin: 0 0 1vh 0;
+  margin: 0;
   z-index: 1;
 }
 
@@ -155,20 +161,54 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 703px){
+  .dropdown-header2{
+    width: 15vw;
+    font-size: 1rem;
+  }
+
+  .colsheader .headercol1{
+    width: 42%;
+  }
+
+  .colsheader .headercol2,
+  .colsheader .headercol3,
+  .colsheader .headercol4,
+  .colsheader .headercol5{
+    width: 14.5%;
+  }
+
+}
+
+@media screen and (max-width: 575px){
+  .dropdown1,
+  .dropdown2{
+    display: none;
+  }
+}
+
+
+
+
 
 /*==================MAIN===================*/
 #divPai{
-  width: 95%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #divFilho{
-  background-color: #333;
+  background-color: #f5f4f4;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
+
+
 
 /*=================CAROUSEL======================*/
 .slider{
@@ -192,6 +232,7 @@
   width: 25%;
   position: relative;
   text-align: center;
+  transition: 2s;
 }
 
 .slide img{
@@ -200,7 +241,7 @@
 
 .manual-navigation{
   position: absolute;
-  width: 95%;
+  width: 100%;
   margin: -40px 0 0 0;
   display: flex;
   justify-content: center;
@@ -248,32 +289,32 @@
 
 .navigation-auto{
   position: absolute;
-  width: 95%;
+  width: 100%;
   margin-top: 360px;
   display: flex;
   justify-content: center;
+  transition: 1s;
 }
 
 .navigation-auto div:not(:last-child){
   margin-right: 1rem;
 }
 
-#radio1:checked ~.navigation-auto .auto-btn1{
+#radio1:checked ~ .navigation-auto .auto-btn1{
   background-color: #fff;
 }
 
-#radio2:checked ~.navigation-auto .auto-btn2{
+#radio2:checked ~ .navigation-auto .auto-btn2{
   background-color: #fff;
 }
 
-#radio3:checked ~.navigation-auto .auto-btn3{
+#radio3:checked ~ .navigation-auto .auto-btn3{
   background-color: #fff;
 }
 
-#radio4:checked ~.navigation-auto .auto-btn4{
+#radio4:checked ~ .navigation-auto .auto-btn4{
   background-color: #fff;
 }
-
 
 
 
@@ -288,6 +329,7 @@
 footer {
     background-color: #004a8d;
     height: 41vh;
+    margin: 1rem 0 0 0;
 }
 .coluna1 {
   width: 48%;
