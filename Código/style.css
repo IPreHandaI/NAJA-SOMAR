@@ -54,7 +54,7 @@ header{
 /*Estilo do  dropdown*/
 
 .dropdown-header2 {
-  font-size: 10px;
+  font-size: 1rem;
   border: 1px solid #004a8d;
   border-radius: 5px;
   background-color: #004a8d;
