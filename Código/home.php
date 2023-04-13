@@ -58,7 +58,7 @@ include_once 'includes/_header.php';
 
 <!--=====================CARDS======================-->
     <div class="card-deck">
-        <div class="card1 card1">
+        <div class="card card1">
             <img src="imagens/sustentabilidade.png" class="cardImg" alt="Imagem 1">
             <div class="card-body">
             <h5 class="card-title">Sustentabilidade</h5>
@@ -74,7 +74,7 @@ include_once 'includes/_header.php';
             </div>
         </div>
         
-        <div class="card card3">
+        <div id="card3" class="card card3">
             <img src="imagens/transparencia.png" class="cardImg" alt="Imagem 1">
             <div class="card-body">
             <h5 class="card-title">Transparência</h5>
@@ -82,7 +82,7 @@ include_once 'includes/_header.php';
             </div>
         </div>
         
-        <div class="card card4">
+        <div id="card4" class="card card4">
             <img src="imagens/consciencia.png" class="cardImg" alt="Imagem 2">
             <div class="card-body">
             <h5 class="card-title">Consciênia</h5>
