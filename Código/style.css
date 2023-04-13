@@ -213,6 +213,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 0 6rem 0;
 }
 
 #divFilho{
@@ -223,7 +224,13 @@ header{
   align-items: center;
 }
 
-
+#principios{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 4rem 0;
+}
 
 
 
@@ -399,19 +406,43 @@ header{
 
 
 /*========================CARDS=========================*/
-
-.card-deck{
+.card-deck {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 1.5rem;
+  margin: 0 0 5rem 0;
 }
 
+.card {
+  max-width: 100%;
+  margin: 0 auto;
+}
 
+.cardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%;
+  margin: 0 auto;
+}
 
+.card-body {
+  max-width: 60%;
+  margin: 10px auto;
+  text-align: center;
+}
 
+.card-title{
+  font-size: large;
+  margin: 0.5rem 0;
+}
 
-
-
+.card-text{
+  text-align: justify;
+  font-size: small;
+  margin: 0.5rem 0;
+}
 
 
 
@@ -455,7 +486,6 @@ footer {
   width: 100%;
   float: left;
   height: 8vh;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -508,30 +538,24 @@ footer {
   color: white;
 }
 
+
+
+
+/*===========================MEDIA PARA TELA 2560PX===========================*/
+
 @media screen and (max-width: 2560px) {
   .linha2{
     display: none;
+    margin: 0 0 -2rem 0;
   }
 
-  .linha3 .subcol1 img{
-    margin: 0 0 100px 0;
-  }
-
-  .coluna1 .subcol1 #logoYT {
-    width: 4vw;
-    height: auto;
-  }
-  
-  .coluna1 .subcol1 #logoFace {
-    width: 4vw;
-    height: auto;
-  }
-  
+  .coluna1 .subcol1 #logoYT,
+  .coluna1 .subcol1 #logoFace,
   .coluna1 .subcol1 #logoInsta {
-      width: 4vw;
-      height: auto;
+    width: 2vw;
+    height: auto;
   }
-
+  
   .coluna2 .linha,
   .coluna3 .linha{
     padding: 0 0 10px 0;
@@ -543,12 +567,38 @@ footer {
   }
 }
 
+
+/*===========================MEDIA PARA TELA 1440PX===========================*/
+@media screen and (max-width: 1440px) {
+  .coluna1 .subcol1 #logoYT,
+  .coluna1 .subcol1 #logoFace,
+  .coluna1 .subcol1 #logoInsta {
+    width: 4vw;
+    height: auto;
+  }
+}
+
+
+/*===========================MEDIA PARA TELA 768X===========================*/
 @media screen and (max-width: 768px) {
   #logo{
     width: 2.6vw;
     margin: 0.5px 0 0 1rem;
   }
 
+/*==========CARDS===========*/
+  #principios strong{
+    font-size: 1.5rem;
+  }
+
+  .card1{
+    display: none;
+  }
+
+
+
+
+/*==========FOOTER===========*/
   .coluna1 a,
   .coluna2 a,
   .coluna3 a{
@@ -560,60 +610,151 @@ footer {
     margin: 5px 0 0 0;
   }
 
-  .coluna2 .linha,
-  .coluna3 .linha{
+  .coluna2 .linha:not(:last-child),
+  .coluna3 .linha:not(:last-child){
     margin: 5px 0 0 0;
-    padding: 0 0 3px 0;
+    padding: 0 0 5px 0;
   }
 
   .linha2{
-    margin: 0 0 2rem 0;
+    margin: 0 0 0.1rem 0;
   }
 
   .coluna1 .subcol1 #logoInsta,
   .coluna1 .subcol1 #logoFace,
   .coluna1 .subcol1 #logoYT{
-    width: 8vw;
+    width: 5vw;
   }
+
+
 
 }
 
-@media screen and (max-width: 425px) {
-  footer{
-    height: 25vh;
-  }
 
+/*===========================MEDIA PARA TELA 425PX===========================*/
+@media screen and (max-width: 425px) {
   #logo{
     width: 4vw;
     margin: 5px 0 0 1rem;
   }
 
+/*==========MAIN===========*/
+#divPai{
+  margin: 0 0 2rem 0;
+}
+
+
+
+
+/*==========CAROUSEL===========*/
+
+
+
+
+/*==========CARDS===========*/
+#principios{
+  margin: 0 0 2rem 0;
+}
+
+#principios strong{
+  font-size: 1rem;
+}
+
+.card:not(:last-child){
+  margin: 0 1rem 0 0;
+}
+
+.card2{
+  display: none;
+}
+
+.card-title{
+  font-size: 1rem;
+}
+
+.card-text{
+  height: 5vh;
+  font-size: 6px;
+}
+
+
+
+
+/*==========FOOTER===========*/
+  footer{
+    height: 25vh;
+  }
+  
   .linha2{
     margin: 0;
   }
-
+  
   .coluna1 .subcol1 #logoInsta,
   .coluna1 .subcol1 #logoFace,
   .coluna1 .subcol1 #logoYT{
-    margin-bottom: 12rem;
     width: 7vw;
   }
-
+  
   .coluna1 a,
   .coluna2 a,
   .coluna3 a{
     font-size: 10px;
   }
 
+  .coluna1 .linha2{
+    height: 10vh;
+  }
+
   .coluna2 .linha,
   .coluna3 .linha{
-    margin: -12px 0 0 0;
+    height: 4.5vh;
   }
+
+  .coluna2 .linha,
+  .coluna3 .linha{
+    margin: 0;
+  }
+
 }
 
+
+
+/*===========================MEDIA PARA TELA 375PX===========================*/
 @media screen and (max-width: 375px) {
   #logo{
     width: 5vw;
     margin: 3px 0 0 1rem;
   }
+
+/*==========CARDS===========*/
+  .card-deck .card1 .cardImg{
+    margin: 100rem 0 0 0;
+    background-color: aquamarine;
+  }
+}
+
+
+
+
+
+
+/*===========================MEDIA PARA TELA 320PX===========================*/
+@media screen and (max-width: 320px) {
+  footer{
+    height: 20vh;
+  }
+
+  .linha2{
+    margin: 0 0 -20px 0;
+  }
+
+  .coluna1 .subcol1{
+    height: 0;
+  }
+
+  .coluna2 .linha,
+  .coluna3 .linha{
+    height: 3vh;
+  }
+
 }

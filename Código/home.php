@@ -51,43 +51,50 @@ include_once 'includes/_header.php';
 <!--==================FIM DO CAROUSEL=====================-->
 
 
+<div id="principios">
+    <strong>Princípios</strong>
+</div>
 
 
 <!--=====================CARDS======================-->
     <div class="card-deck">
-        <div class="card">
-            <img src="imagem-1.jpg" class="card-img-top" alt="Imagem 1">
+        <div class="card1 card1">
+            <img src="imagens/sustentabilidade.png" class="cardImg" alt="Imagem 1">
             <div class="card-body">
-            <h5 class="card-title">Título do Card 1</h5>
-            <p class="card-text">Texto descritivo do Card 1.</p>
-            <a href="#" class="btn btn-primary">Botão de Ação 1</a>
+            <h5 class="card-title">Sustentabilidade</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsam aut eius alias porro ipsum cupiditate esse veritatis!</p>
+            </div>
+        </div>
+
+        <div class="card card2">
+            <img src="imagens/respeito.png" class="cardImg" alt="Imagem 1">
+            <div class="card-body">
+            <h5 class="card-title">Respeito</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsam aut eius alias porro ipsum cupiditate esse veritatis!</p>
             </div>
         </div>
         
-        <div class="card">
-            <img src="imagem-2.jpg" class="card-img-top" alt="Imagem 2">
+        <div class="card card3">
+            <img src="imagens/transparencia.png" class="cardImg" alt="Imagem 1">
             <div class="card-body">
-            <h5 class="card-title">Título do Card 2</h5>
-            <p class="card-text">Texto descritivo do Card 2.</p>
-            <a href="#" class="btn btn-primary">Botão de Ação 2</a>
+            <h5 class="card-title">Transparência</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsam aut eius alias porro ipsum cupiditate esse veritatis!</p>
             </div>
         </div>
         
-        <div class="card">
-            <img src="imagem-3.jpg" class="card-img-top" alt="Imagem 3">
+        <div class="card card4">
+            <img src="imagens/consciencia.png" class="cardImg" alt="Imagem 2">
             <div class="card-body">
-            <h5 class="card-title">Título do Card 3</h5>
-            <p class="card-text">Texto descritivo do Card 3.</p>
-            <a href="#" class="btn btn-primary">Botão de Ação 3</a>
+            <h5 class="card-title">Consciênia</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsam aut eius alias porro ipsum cupiditate esse veritatis!</p>
             </div>
         </div>
         
-        <div class="card">
-            <img src="imagem-4.jpg" class="card-img-top" alt="Imagem 4">
+        <div class="card card5">
+            <img src="imagens/harmonia.png" class="cardImg" alt="Imagem 3">
             <div class="card-body">
-            <h5 class="card-title">Título do Card 4</h5>
-            <p class="card-text">Texto descritivo do Card 4.</p>
-            <a href="#" class="btn btn-primary">Botão de Ação 4</a>
+            <h5 class="card-title">Harmonia</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsam aut eius alias porro ipsum cupiditate esse veritatis!</p>
             </div>
         </div>
     </div>
