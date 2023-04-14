@@ -47,7 +47,6 @@ header{
   width: 25%;
 }
 
-
 .colsheader {
   display: flex;
   flex-wrap: wrap;
@@ -364,6 +363,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .imgODS {
@@ -390,95 +390,19 @@ header{
 }
 
 /*====================FOOTER========================*/
-
-footer {
-    background-color: #004a8d;
-    height: 41vh;
-    margin: 1rem 0 0 0;
-}
-.coluna1 {
-  width: 48%;
-  float: left;
-  text-align: center;
+footer{
+  background-color: #012344;
 }
 
-.coluna2 {
-  width: 26%;
-  float: left;
-  text-align: center;
-}
-
-.coluna3 {
-  width: 26%;
-  float: left;
-  text-align: center;
-}
-
-.coluna1 .linha1 {
-  height: 8vh;
+.separacaoFooter{
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.coluna1 .subcol1 {
-  width: 100%;
-  float: left;
-  height: 8vh;
-  justify-content: center;
-  align-items: center;
+.navegacao,
+.redesSociais,
+.contato{
+  width: 33.333%;
 }
-
-.coluna1 .subcol1 #logoInsta,
-.coluna1 .subcol1 #logoFace,
-.coluna1 .subcol1 #logoYT {
-  width: 5vw;
-  height: auto;
-  margin-right: 8vw;
-}
-
-.coluna1 .subcol1 #logoYT {
-  max-width: 100%;
-  width: 3vw;
-  height: auto;
-  margin-right: 0;
-}
-
-.coluna1 .subcol1 #logoFace {
-  max-width: 100%;
-  width: 3vw;
-  height: auto;
-}
-
-.coluna1 .subcol1 #logoInsta {
-    max-width: 100%;
-    width: 3vw;
-    height: auto;
-}
-
-.coluna1 .linha2 {
-  height: 24vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.coluna2 .linha,
-.coluna3 .linha {
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.coluna1 a,
-.coluna2 a,
-.coluna3 a{
-  color: white;
-}
-
-
-
 
 /*===========================MEDIA PARA TELA 2560PX===========================*/
 
