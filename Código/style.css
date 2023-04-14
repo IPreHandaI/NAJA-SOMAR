@@ -6,179 +6,34 @@
 
 /*===================HEADER======================*/
 
-header{
-  margin: 0 0 1rem 0;
-  height: 5vh;
-  background-color: #004a8d;
+  header{
+    height:100px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           0px;
+    width: 100%;
+    background-color:white;
+    display:flex;
+    justify-content:space-around;
+    box-shadow:0 0 5px 3px #d0d0d0;
 }
-
-.colsheader {
-  display: flex;
-  flex-wrap: wrap;
+header #menu{
+  height: 40px;
+  margin: auto 0 auto 0;
 }
-
-.headercol {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  background-color: #004a8d;
+header #metas{
+  height: 70px;
+  margin: auto 0 auto 10px;
+}
+header #perfil{
+  height: 40px;
+  margin: auto 0 auto 0;
+}
+nav{
+  height: 30px;
+  background-color: #2a2a2a;
   width: 100%;
 }
 
-.colsheader .headercol1{
-  align-content: center;
-  line-height: 4vh;
-  text-align: left;
-  width: 50%;
-  font-size: small;
-  color: white;
-}
-
-#logo{
-  width: 2vw;
-  height: auto;
-  margin: 0 0 0 1rem;
-}
-
-.colsheader .headercol2,
-.colsheader .headercol3,
-.colsheader .headercol4,
-.colsheader .headercol5{
-  width: 25%;
-}
-
-.colsheader {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
 /*=================DROPWDOWN===============*/
 
-.dropdown1,
-.dropdown2,
-.dropdown3,
-.dropdown4 {
-  position: relative;
-  display: inline-block;
-}
-
-/*Estilo do  dropdown*/
-
-.dropdown-header1,
-.dropdown-header2 {
-  font-size: small;
-  background-color: #004a8d;
-  color: white;
-  width: 24.6vw;
-  height: 5vh;
-  cursor: pointer;
-  z-index: 2;
-  position: inherit;
-  word-wrap: break-word;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.dropdown-header1 .dropdown-options2 p,
-.dropdown-header2 .dropdown-options2 p{
-  font-size: 5px;
-}
-
-/*Deixando o :hover funcionando quando o usuário passa o mouse pela opções*/
-.dropdown-header1:hover, 
-.dropdown-header2:hover, 
-.dropdown1:hover .dropdown-header2,
-.dropdown2:hover .dropdown-header2 {
-  background-color: #012344;
-  height: 5vh;
-  color: #fff;
-}
-
-/*Estilização das opções*/
-.dropdown-options2 {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  font-size: small;
-}
-
-.option1{
-  animation: cachoeira1 1s;
-}
-
-.option2{
-  animation: cachoeira2 1.5s;
-}
-
-.option3{
-  animation: cachoeira3 2s;
-}
-
-.option4{
-  animation: cachoeira4 2.5s;
-}
-
-/*Animação*/
-@keyframes cachoeira1{
-  0% { 
-    opacity: 0;
-    margin: -5vw 0 0 0;
-    };
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
-}
-
-@keyframes cachoeira2{
-  0% { opacity: 0;};
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
-}
-
-@keyframes cachoeira3{
-  0% { opacity: 0;};
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
-}
-
-@keyframes cachoeira4{
-  0% { opacity: 0;};
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
-}
-
-/*Fazendo o dropdown aparecer*/
-.dropdown1:hover .dropdown-options2,
-.dropdown2:hover .dropdown-options2 {
-  display: block;
-}
-
-/*Dando tamanho ao botão de opção*/
-.dropdown-option2 {
-  padding: 5px;
-  width: 23.5vw;
-  height: 4vh;
-  font-size: small;
-  border: 1px solid #ccc;
-  border-radius: 5%;
-  background-color: #fff;
-  color: #333;
-  margin: 0;
-  z-index: 1;
-}
-
-
-/*:hover das opções*/
-.dropdown-option1:hover 
-.dropdown-option2:hover{
-  background-color: #f2f2f2;
-  cursor: pointer;
-  border-radius: 5%;
-  z-index: 1;
-}
 
 /*==================MAIN===================*/
 #divPai{
