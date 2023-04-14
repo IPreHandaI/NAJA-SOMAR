@@ -1,6 +1,6 @@
 <?php
-include_once 'includes/_head.php'
-include_once 'includes/_header.php'
+include_once 'includes/_head.php';
+include_once 'includes/_header.php';
 ?>
     <main>
         <div id="box-pai">
@@ -17,5 +17,5 @@ include_once 'includes/_header.php'
         </div>
     </main>
 <?php
-include_once 'includes/_footer.php'
+include_once 'includes/_footer.php';
 ?>
