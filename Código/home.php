@@ -99,6 +99,34 @@ include_once 'includes/_header.php';
         </div>
     </div>
 
+
+<!--=================================ODS=============================================-->
+<div class="cards">
+    <div class="cards1">
+        <img id="imgODS" class="imgODS" src="imagens/1.png" alt="Imagem 1">
+        <img id="imgODS" class="imgODS" src="imagens/2.png" alt="Imagem 2">
+        <img id="imgODS" class="imgODS" src="imagens/3.jpg" alt="Imagem 3">
+        <img id="imgODS" class="imgODS" src="imagens/4.webp" alt="Imagem 4">
+        <img id="imgODS" class="imgODS" src="imagens/5.gif" alt="Imagem 5">
+        <img id="imgODS" class="imgODS" src="imagens/6.png" alt="Imagem 6">
+    </div>
+    <div class="cards2">
+        <img id="imgODS" class="imgODS" src="imagens/7.png" alt="Imagem 1">
+        <img id="imgODS" class="imgODS" src="imagens/8.png" alt="Imagem 2">
+        <img id="imgODS" class="imgODS" src="imagens/9.png" alt="Imagem 3">
+        <img id="imgODS" class="imgODS" src="imagens/10.webp" alt="Imagem 4">
+        <img id="imgODS" class="imgODS" src="imagens/11.jpg" alt="Imagem 5">
+        <img id="imgODS" class="imgODS" src="imagens/12.png" alt="Imagem 6">
+    </div>
+    <div class="cards3">
+        <img id="imgODS" class="imgODS" src="imagens/13.png" alt="Imagem 1">
+        <img id="imgODS" class="imgODS" src="imagens/14.png" alt="Imagem 2">
+        <img id="imgODS" class="imgODS" src="imagens/15.png" alt="Imagem 3">
+        <img id="imgODS" class="imgODS" src="imagens/16.webp" alt="Imagem 4">
+        <img id="imgODS" class="imgODS" src="imagens/17.png" alt="Imagem 5">
+    </div>
+</div>
+
 <?php
 include_once 'includes/_footer.php';
 ?>

@@ -357,8 +357,37 @@ header{
 
 
 
+/*========================ODS=========================*/
+.cards1,
+.cards2,
+.cards3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.imgODS {
+  width: 12%;
+  height: auto;
+  margin: 0 1rem 1rem 0;
+  transition: transform 0.2s; /* Adicionando transição */
+}
 
+.imgODS:hover {
+  transform: scale(1.2); /* Aumentando o tamanho */
+  cursor: pointer;
+  z-index: 1; /* Ajustando a ordem de empilhamento */
+}
+
+/* Ajustando a origem da transformação */
+.imgODS:hover:not(:first-child) {
+  transform-origin: center center;
+}
+
+/* Impedindo que as imagens encolham */
+.imgODS:first-child {
+  flex-shrink: 0;
+}
 
 /*====================FOOTER========================*/
 
@@ -600,16 +629,16 @@ footer {
 
 
 /*===========================MEDIA PARA TELA 425PX===========================*/
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 445px) {
   #logo{
     width: 4vw;
     margin: 5px 0 0 1rem;
   }
 
 /*==========MAIN===========*/
-#divPai{
-  margin: 0 0 2rem 0;
-}
+  #divPai{
+    margin: 0 0 2rem 0;
+  }
 
 
 /*==========CAROUSEL===========*/
@@ -654,6 +683,10 @@ footer {
   font-size: 1rem;
 }
 
+.card2{
+  display: none;
+}
+
 .card:not(:last-child){
   margin: 0 1rem 0 0;
 }
@@ -670,6 +703,12 @@ footer {
   height: 5vh;
   font-size: 6px;
 }
+
+
+
+
+/*==========ODS===========*/
+
 
 
 
