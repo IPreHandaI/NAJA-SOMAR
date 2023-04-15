@@ -20,8 +20,15 @@ include_once 'includes/_header.php';
             <button id="botao">Entrar</button>
             <hr>
             <p>or with</p>
-            <img id="logar" src="imagens/facebook.png">
-            <img id="logar" src="imagens/instagram.webp">
+            <div id="orWith">
+                <div id="imgsLogin">
+                    <img id="logar" src="imagens/facebook.png">
+                    <img id="logar" src="imagens/instagram.webp">
+                </div>
+                <div id="ajudaLogin">
+                    <h6 style="color: #8B8B8B;">Problemas para entrar? <a style="color: #444444;"> Clique aqui!</a></h6>
+                </div>
+            </div>
             <h6 style="color:#8B8B8B; margin-top: 15px;">Don’t have an accont yet? <a style="color:#444444;">Sing Up</a></h6>
         </div>
     </main>

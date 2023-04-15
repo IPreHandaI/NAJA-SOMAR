@@ -6,7 +6,7 @@ include_once 'includes/_head.php';
     <div class="colsheader">
         <div class="headercol headercol1">
             <div>
-                <img id="logo" src="imagens/sorriso.png">
+                <img id="logo" src="imagens/logo.png">
             </div>
         </div>
         <div class="headercol headercol2">

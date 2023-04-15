@@ -127,6 +127,21 @@ include_once 'includes/_header.php';
     </div>
 </div>
 
+<!--======================CURIOSIDADE==============================-->
+<div class="curiosidade">
+    <div class="curiosidadeDivImg">
+        <img id="curiosidadeImg" src="imagens/fecomercio.webp">
+    </div>
+    <div class="curiosidadeDivTexto">
+        <div class="curiosidadeTexto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maxime? Voluptate qui quam officia reiciendis labore quas quidem atque hic dicta necessitatibus perferendis suscipit eius obcaecati quo dolor, neque repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sed dolores consequatur impedit voluptatem quas cupiditate deleniti doloribus reprehenderit beatae officia quasi corrupti eveniet, voluptate dolorum numquam. Dolorum, harum autem.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
 <?php
 include_once 'includes/_footer.php';
 ?>
