@@ -30,10 +30,10 @@
             </div>
             <div>
                 <h3>Contato</h3>
-                <a href=""><img src="facebook.png"></a>
-                <a href=""><img src="instagram.webp"></a>
-                <a href=""><img src="whatsapp.png"></a>
-                <a href=""><img src="youtube.png"></a>
+                <a href=""><img src="../imagens/facebook.png"></a>
+                <a href=""><img src="../imagens/instagram.webp"></a>
+                <a href=""><img src="../imagens/whatsapp.png"></a>
+                <a href=""><img src="../imagens/youtube.png"></a>
             </div>
         </div>
         <p>2023</p>
