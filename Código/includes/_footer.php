@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<?php
+include_once '_head.php';
+?>
 <body>
     
 </body>
 </html>
 
     <footer>
-        <div class="separacaoFooter">
-            <div class="navegacao">
+        <div id="footer-box">
+            <div>
                 <h3>Navegação</h3>
-                <a id="aNav">Home</a>
-                <a id="aNav">SOMAR</a>
-                <a id="aNav">Contato</a>
-                <a id="aNav">ODS</a>
+                <a href="">Home</a>
+                <a href="">SOMAR</a>
+                <a href="">Contato</a>
+                <a href="">ODS</a>
             </div>
-            <div class="desenvolvedores">
+            <div>
                 <h3>Desenvolvedores</h3>
-                <a id="aDes">Ana Luiza Santos</a>
-                <a id="aDes">Arthur Da Silva</a>
-                <a id="aDes">João Gabriel Gotardo</a>
-                <a id="aDes">Júlia Magalhães</a>
-                <a id="aDes">Nicolas Diovani</a>
+                <a href="">Ana Luiza Santos</a>
+                <a href="">Arthur Da Silva</a>
+                <a href="">João Gabriel Gotardo</a>
+                <a href="">Júlia Magalhães</a>
+                <a href="">Nicolas Diovani</a>
             </div>
-            <div class="contato">
+            <div>
                 <h3>Contato</h3>
-                <img id="imgCon" src="imagens/facebook.png">
-                <img id="imgCon" src="imagens/instagram.webp">
-                <img id="imgCon" src="imagens/whatsapp.png">
-                <img id="imgCon" src="imagens/youtube.png">
+                <a href=""><img src="imagens/facebook.png"></a>
+                <a href=""><img src="imagens/instagram.webp"></a>
+                <a href=""><img src="imagens/whatsapp.png"></a>
+                <a href=""><img src="imagens/youtube.png"></a>
             </div>
         </div>
-        <div id="date">
-            <span id="span2023">2023</span>
-        </div>
+        <p>2023</p>
+        <div style="background-color:rgb(253, 202, 33);height: 1.5px;width: 100%;"></div>
     </footer>
   </body>
   <script src="script.js"></script>
