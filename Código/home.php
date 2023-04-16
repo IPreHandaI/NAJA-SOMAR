@@ -18,16 +18,16 @@ include_once 'includes/_header.php';
 
                 <!--Slide imagens-->
                 <div class="slide first">
-                    <img src="./imagens/ImgSemImg.png" alt="Img1">
+                    <img src="./imagens/1.png" alt="Img1">
                 </div>
                 <div class="slide">
-                    <img src="./imagens/ImgSemImg2.jfif" alt="Img2">
+                    <img src="./imagens/youtube.png" alt="Img2">
                 </div>
                 <div class="slide">
-                    <img src="./imagens/ImgSemImg.png" alt="Img3">
+                    <img src="./imagens/logo.png" alt="Img3">
                 </div>
                 <div class="slide">
-                    <img src="./imagens/ImgSemImg2.jfif" alt="Img4">
+                    <img src="./imagens/instagram.png" alt="Img4">
                 </div>
 
                 <!--AutoNavegação-->
@@ -133,8 +133,8 @@ include_once 'includes/_header.php';
         <img id="curiosidadeImg" src="imagens/fecomercio.webp">
     </div>
     <div class="curiosidadeDivTexto">
-        <div class="curiosidadeTexto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, maxime? Voluptate qui quam officia reiciendis labore quas quidem atque hic dicta necessitatibus perferendis suscipit eius obcaecati quo dolor, neque repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sed dolores consequatur impedit voluptatem quas cupiditate deleniti doloribus reprehenderit beatae officia quasi corrupti eveniet, voluptate dolorum numquam. Dolorum, harum autem.</p>
+        <div>
+            <p id="curiosidadeTexto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, illum vitae, nostrum possimus recusandae ipsam repellendus tenetur consectetur numquam ullam, quae placeat eius quod. Laboriosam ducimus corrupti voluptates nobis rerum?</p>
         </div>
     </div>
 </div>

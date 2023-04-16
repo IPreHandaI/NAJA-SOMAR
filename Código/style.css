@@ -411,8 +411,9 @@ header{
   text-align: center;
   margin: 10rem auto;
   background-color: #dddddd;
-  text-align: center;
-  border-radius: 10%;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff) 1;
 }
 
 #curiosidadeDivImg{
@@ -427,19 +428,15 @@ header{
 .curiosidadeDivTexto{
   width: 70%;
   padding: 0 4rem;
-  line-height: 3.5rem;
 }
 
-
+#curiosidadeTexto p{
+  line-height: 2.5rem;
+  font-size: 1rem;
+}
 
 /*====================FOOTER========================*/
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color:white;
-}
 footer{
     height: 510px;
     width: 100%;
@@ -452,9 +449,14 @@ footer{
     flex-direction: row;
     width: 100%;
 }
-footer a{
+#aFooter{
     text-decoration: none;
+    color: white;
+  }
+#h3footer{
+  color: white;
 }
+
 footer div{
     display: flex;
     flex-direction: column;
@@ -478,7 +480,7 @@ footer p{
     footer h3{
         font-size: 14px;
     }
-    footer a{
+    footer #afooter{
         font-size: 11px;
     }
     footer img{
@@ -519,6 +521,11 @@ footer p{
   .coluna3 a{
     font-size: 1rem;
   }
+
+  #curiosidadeTexto p{
+    font-size: 35px;
+    line-height: 3rem;
+  }
 }
 
 
@@ -530,14 +537,47 @@ footer p{
     width: 4vw;
     height: auto;
   }
+
+  #curiosidadeTexto{
+    font-size: 15px;
+    line-height: 2rem;
+  }
 }
+
+/*===========================MEDIA PARA TELA 1024PX===========================*/
+@media screen and (max-width: 1025px) {
+  .curiosidadeDivImg{
+    width: 70%;
+  }
+  
+  .curiosidadeDivTexto{
+    padding: 0 2rem;
+  }
+  
+  #curiosidadeTexto{
+    font-size: 12px;
+    line-height: 2rem;
+    padding: 0;
+  } 
+
+}
+
 
 
 /*===========================MEDIA PARA TELA 768X===========================*/
 @media screen and (max-width: 768px) {
   #logo{
-    width: 2.6vw;
-    margin: 0.5px 0 0 1rem;
+    width: 20%;
+    margin: 1rem 0 0 1rem;
+  }
+
+  .dropdown-header1,
+  .dropdown-header2{
+    font-size: 1rem;
+  }
+
+  .dropdown-option2{
+    font-size: 1rem;
   }
 
 /*==========CAROUSEL===========*/  
@@ -623,8 +663,8 @@ footer p{
 /*===========================MEDIA PARA TELA 425PX===========================*/
 @media screen and (max-width: 445px) {
   #logo{
-    width: 4vw;
-    margin: 5px 0 0 1rem;
+    width: 40%;
+    margin: 1.5rem 0 0 1rem;
   }
 
 /*==========MAIN===========*/
@@ -675,6 +715,10 @@ footer p{
   font-size: 1rem;
 }
 
+.card-deck{
+  margin: 0 0 2rem 0;
+}
+
 .card2{
   display: none;
 }
@@ -703,6 +747,30 @@ footer p{
 
 
 
+
+
+
+
+/*==========CURIOSIDADES=============*/
+
+.curiosidade{
+  height: 30vh;
+  margin: 3rem;
+}
+
+.curiosidadeDivImg{
+  width: 70%;
+}
+
+.curiosidadeDivTexto{
+  padding: 0 2rem;
+}
+
+#curiosidadeTexto{
+  font-size: 8px;
+  line-height: 0.5rem;
+  padding: 0;
+} 
 
 
 /*==========FOOTER===========*/
@@ -822,5 +890,24 @@ footer p{
   #card4{
     margin: 0 0 0 1.5px;
   }
+
+  .curiosidade{
+    height: 20vh;
+    margin: 3rem;
+  }
+  
+  .curiosidadeDivImg{
+    width: 70%;
+  }
+  
+  .curiosidadeDivTexto{
+    padding: 0;
+  }
+  
+  #curiosidadeTexto{
+    font-size: 6px;
+    line-height: 0.5rem;
+    padding: 0;
+  } 
 }
 }

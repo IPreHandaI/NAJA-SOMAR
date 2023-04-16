@@ -24,6 +24,7 @@ include_once 'includes/_header.php';
                 <div id="imgsLogin">
                     <img id="logar" src="imagens/facebook.png">
                     <img id="logar" src="imagens/instagram.webp">
+                    <img id="logar" src="imagens/google.png">
                 </div>
                 <div id="ajudaLogin">
                     <h6 style="color: #8B8B8B;">Problemas para entrar? <a style="color: #444444;"> Clique aqui!</a></h6>

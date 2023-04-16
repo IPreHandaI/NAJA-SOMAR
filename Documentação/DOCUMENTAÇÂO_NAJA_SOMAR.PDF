@@ -1,0 +1,61 @@
+Equipe NAJA
+Integrantes: Ana Luiza Silveira Dos Santos, Arthur Da Silva Wiatrowski, João Gabriel Da Silveira Gotardo, Julia Guimarães Franco e Nicolas Diovani Oliveira Dias
+O objetivo do projeto é fazer com que a Fecomércio, e suas parcerias, consigam se comunicar com as pessoas e divulgar seus projetos tendo como inspiração as ODS's.
+O projeto será feito em HTML, CSS, JS e PHP, podendo, em algum outro momento, adicionar ou diminuir alguma linguagem.
+HOME - Prototipagem:                                                                            HOME - Diagramação:
+ 			 
+
+No header escolhemos colocar dropdowns para navegação entre as páginas com o intuito de preencher o header.
+Já abaixo do header terá um carousel com alguns banners para mostrar fotos de projetos, entre outras coisas, podendo mudar manualmente as imagens, ou deixar passar automaticamente.
+Logo depois nossa proposta é deixar 4 princípios do Fecormécio/Senac/Sesc bem a vista para que os usuários vejam no que a empresa acredita.
+Colocamos uma parte para as ODS’s ficarem bem amostra para que o usuário consiga escolher qual ODS vai usar
+Embaixo das ODS’s colocaremos algo parecido com um mural de comentários de usuários, para que as pessoas e a própria instituição consigam ver o que as pessoas acham. A ideia é selecionar alguns comentários para ficar nesse mural, não todos!
+E abaixo dos comentários temos o footer, podendo conter redes sociais, contato e o logo.
+Na diagramação dessa etapa alinhamos os objetos da página proporcionalmente, de forma em que por exemplo: as ODS’s ficaram com espaços iguais entre elas e as que sobraram não ficaram no lado direito, mas sim alinhadas com as outras em baixo, no header que se repetira em todas as outras páginas alinhamos o texto maior no meio do header e o menu encima, no footer os ícones ficam no canto inferior direito de forma organizada. 
+
+
+PROJETOS - Prototipagem:					PROJETOS - Diagramação:
+ 			 
+Na parte de projetos temos um header mais extenso, contendo os mesmos dropdowns da home mas com uma altura maior e com alguma cor sólida, podendo ou não ter algo escrito.
+Já abaixo colocaremos uma barra de pesquisa para que a pessoa consigo navegar pela própria página.
+Na main principal existe dois lados diferentes. O lado esquerdo vai abordar mais a questão de filtros de pesquisa. Logo abaixo temos uma área para mostrar as últimas postagens. No lado direito temos a divisão para mostrar os projetos de acordo com o que a pessoa escolheu na home.
+Depois temos novamente a parte que mostra todas as ODS’s para que o usuário consiga navegar novamente nos projetos sem ter de voltar para a home.
+E abaixo temos o footer podendo conter contato, redes sociais e o logo.
+Nesta diagramação se repete o caso das ODS’s e aqui usamos um conceito de 70% pra 30% como podemos ver na separação no meio da página.
+
+
+CONTATO - Prototipagem:				CONTATO - Diagramação:
+ 	 
+Começamos com o header com a mesma ideia do header da home, com dropdowns para o usuário navegar pelo site.
+Logo abaixo a esquerda temos a parte de contato, onde a pessoa colocará seu e-mail, tipo de problema/comentário uma parte apenas para escrever o porquê do contato. Na direita temos algumas informações e opções para a pessoa se guiar por meio de perguntas já respondidas.
+Depois temos o mesmo footer da home, podendo conter redes sociais e o logo.
+Nesta diagramação podemos ver novamente o conceito de 70 pra 30 e também a separação das caixas de digitação de forma onde a que terá mais texto é maior, nesta página as colunas de itens são separadas por linhas 
+
+
+LOGIN - Prototipagem:					LOGIN - Diagramação:
+ 		 
+Começamos com o mesmo header da home, com dropdowns para o usuário navegar.
+Abaixo temos a parte de login dividida em duas partes, a primeira é onde ele vai conseguir se cadastrar por meio de um e-mail e uma senha específica. Na parte de baixo ele poderá entrar com o e-mail do gmail ou por uma conta de alguma rede social.
+E depois temos o mesmo footer da home, podendo conter contato, redes sociais e o logo.
+Esta diagramação segue os mesmos princípios da diagramação da página de contato.
+
+
+PROJETO - Prototipagem:				PROJETO - Diagramação:
+ 		 
+Aqui temos o mesmo header da home, com dropdowns para o usuário poder navegar pelo site.
+Logo abaixo temos a parte onde o projeto vai ser explicado em formato de texto e imagens.
+Depois temos o mesmo footer da home, podendo conter contato, redes sociais e o logo.
+Nesta diagramação separamos os objetos em blocos com uma divisão ao meio onde a imagem fica no lado esquerdo e os objetos como o texto e o ícone de foto ficam do lado direito para uma página mais organizada.  
+
+
+
+PROGRAMAÇÃO:
+
+HOME
+ 
+ 
+ 
+LOGIN:
+ 
+ 
+
