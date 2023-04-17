@@ -17,17 +17,13 @@ include_once 'includes/_header.php';
                 <input type="radio" name="radio-btn" id="radio4">
 
                 <!--Slide imagens-->
-                <div class="slide first">
-                    <img src="./imagens/1.png" alt="Img1">
+                <div class="slide first h-100" style="background-image: url(./imagens/ImgSemImg.png);">
                 </div>
-                <div class="slide">
-                    <img src="./imagens/youtube.png" alt="Img2">
+                <div class="slide h-100" style="background-image: url(./imagens/ImgSemImg2.jfif);">
                 </div>
-                <div class="slide">
-                    <img src="./imagens/logo.png" alt="Img3">
+                <div class="slide h-100" style="background-image: url(./imagens/ImgSemImg.png);">
                 </div>
-                <div class="slide">
-                    <img src="./imagens/instagram.png" alt="Img4">
+                <div class="slide h-100" style="background-image: url(./imagens/ImgSemImg2.jfif);">
                 </div>
 
                 <!--AutoNavegação-->
