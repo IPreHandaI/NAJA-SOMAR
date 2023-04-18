@@ -184,38 +184,59 @@
 
 
 /*========================ODS=========================*/
-.cards1,
-.cards2,
-.cards3 {
+
+
+
+#cards{
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imgODS {
-  width: 12%;
+  flex-wrap: wrap;
+  width: 90%;
   height: auto;
-  margin: 0 1rem 1rem 0;
-  transition: transform 0.2s; /* Adicionando transição */
+  justify-content:center;
+  margin:0 auto 0 auto;
 }
-
-.imgODS:hover {
+#cards img {
+  width: 100%;
+  height: 100%;
+}
+#cards button {
+  width: 100%;
+  height: 100%;
+}
+#cards form{
+  width: 15%;
+  margin: 0.45rem 0.45rem 0.45rem 0.45rem;
+  transition: transform 0.2s;
+}
+#cards form:hover {
   transform: scale(1.2); /* Aumentando o tamanho */
-  cursor: pointer;
   z-index: 1; /* Ajustando a ordem de empilhamento */
 }
 
 /* Ajustando a origem da transformação */
-.imgODS:hover:not(:first-child) {
+#cards form:not(:first-child) {
   transform-origin: center center;
 }
 
 /* Impedindo que as imagens encolham */
-.imgODS:first-child {
+#cards form:first-child {
   flex-shrink: 0;
 }
-
-
+@media (max-width:1024px){
+  #cards form {
+    width: 18%;
+  }
+}
+@media (max-width:764px){
+  #cards form {
+    width: 21%;
+  }
+}
+@media (max-width:500px){
+  #cards form {
+    width: 25%;
+  }
+}
 
 
 
@@ -456,17 +477,6 @@
   font-size: 6px;
 }
 
-
-
-
-/*==========ODS===========*/
-
-
-
-
-
-
-
 /*==========CURIOSIDADES=============*/
 
 .curiosidade{
@@ -487,9 +497,6 @@
   line-height: 0.5rem;
   padding: 0;
 } 
-
-
-
 
 /*===========================MEDIA PARA TELA 375PX===========================*/
 @media screen and (max-width: 375px){
@@ -514,13 +521,6 @@
   .card-title{
     font-size: 10px;
   }
-
-
-
-
-
-
-
 
 /*===========================MEDIA PARA TELA 320PX===========================*/
 @media screen and (max-width: 321px) {
