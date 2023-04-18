@@ -1,20 +1,8 @@
 <?php
 
-include_once 'includes/_header.php'
-
+include_once 'includes/_header.php';
+include_once 'includes/_dados.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/home.css">
-    <title>Document</title>
-</head>
-<body>
-    
 <div id="divPai">
     <div id="divFilho">
 
@@ -108,30 +96,19 @@ include_once 'includes/_header.php'
 
 
 <!--=================================ODS=============================================-->
-<div class="cards">
-    <div class="cards1">
-        <img id="imgODS" class="imgODS" src="imagens/1.png" alt="Imagem 1">
-        <img id="imgODS" class="imgODS" src="imagens/2.png" alt="Imagem 2">
-        <img id="imgODS" class="imgODS" src="imagens/3.jpg" alt="Imagem 3">
-        <img id="imgODS" class="imgODS" src="imagens/4.webp" alt="Imagem 4">
-        <img id="imgODS" class="imgODS" src="imagens/5.gif" alt="Imagem 5">
-        <img id="imgODS" class="imgODS" src="imagens/6.png" alt="Imagem 6">
-    </div>
-    <div class="cards2">
-        <img id="imgODS" class="imgODS" src="imagens/7.png" alt="Imagem 1">
-        <img id="imgODS" class="imgODS" src="imagens/8.png" alt="Imagem 2">
-        <img id="imgODS" class="imgODS" src="imagens/9.png" alt="Imagem 3">
-        <img id="imgODS" class="imgODS" src="imagens/10.webp" alt="Imagem 4">
-        <img id="imgODS" class="imgODS" src="imagens/11.jpg" alt="Imagem 5">
-        <img id="imgODS" class="imgODS" src="imagens/12.png" alt="Imagem 6">
-    </div>
-    <div class="cards3">
-        <img id="imgODS" class="imgODS" src="imagens/13.png" alt="Imagem 1">
-        <img id="imgODS" class="imgODS" src="imagens/14.png" alt="Imagem 2">
-        <img id="imgODS" class="imgODS" src="imagens/15.png" alt="Imagem 3">
-        <img id="imgODS" class="imgODS" src="imagens/16.webp" alt="Imagem 4">
-        <img id="imgODS" class="imgODS" src="imagens/17.png" alt="Imagem 5">
-    </div>
+<div id="cards">
+    <?php
+            for($i=0;$i<count($ods);$i++){
+        ?>
+        <form action="pagina-ods.php" method="GET">
+        <input type="number" style="visibility:hidden; display:none;" name="butao" value="<?php echo $i?>">
+        <button style="border:none; cursor:pointer;">
+                <img src="<?php echo $ods[$i]["link"] ?>">
+            </button>
+            </form>
+        <?php
+            }
+        ?>
 </div>
 
 <!--======================CURIOSIDADE==============================-->
@@ -145,7 +122,6 @@ include_once 'includes/_header.php'
         </div>
     </div>
 </div>
-
 
 
 
