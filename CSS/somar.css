@@ -149,7 +149,8 @@
     left: 25px;
     height: 100%;
     width: 4px;
-    background: #004a8d;
+    background: linear-gradient(to bottom, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+    border-width: 1px;
   }
   @media only screen and (min-width: 1170px) {
     #cd-timeline {
@@ -195,11 +196,11 @@
     left: 12px;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px #004a8d, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-  }
+    border-radius: 50%;    
+    }
+
   .cd-timeline-img {
-    background: #004a8d;
+    background: #d3d3d3;
   }
   @media only screen and (min-width: 1170px) {
     .cd-timeline-img {
@@ -355,3 +356,9 @@
     display: reltive;
    
   }
+
+.cd-timeline-content{
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff) 1;
+}

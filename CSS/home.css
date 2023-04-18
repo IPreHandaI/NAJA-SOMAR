@@ -4,183 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*===================HEADER======================*/
-
-header{
-  margin: 0 0 1rem 0;
-  height: 5vh;
-  background-color: #004a8d;
-}
-
-.colsheader {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.headercol {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  background-color: #004a8d;
-  width: 100%;
-}
-
-.colsheader .headercol1{
-  align-content: center;
-  line-height: 4vh;
-  text-align: left;
-  width: 50%;
-  font-size: small;
-  color: white;
-}
-
-#logo{
-  width: 2vw;
-  height: auto;
-  margin: 0 0 0 1rem;
-}
-
-.colsheader .headercol2,
-.colsheader .headercol3,
-.colsheader .headercol4,
-.colsheader .headercol5{
-  width: 25%;
-}
-
-
-.colsheader {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-/*=================DROPWDOWN===============*/
-
-.dropdown1,
-.dropdown2,
-.dropdown3,
-.dropdown4 {
-  position: relative;
-  display: inline-block;
-}
-
-/*Estilo do  dropdown*/
-
-.dropdown-header1,
-.dropdown-header2 {
-  font-size: small;
-  background-color: #004a8d;
-  color: white;
-  width: 24.6vw;
-  height: 5vh;
-  cursor: pointer;
-  z-index: 2;
-  position: inherit;
-  word-wrap: break-word;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.dropdown-header1 .dropdown-options2 p,
-.dropdown-header2 .dropdown-options2 p{
-  font-size: 5px;
-}
-
-/*Deixando o :hover funcionando quando o usuário passa o mouse pela opções*/
-.dropdown-header1:hover, 
-.dropdown-header2:hover, 
-.dropdown1:hover .dropdown-header2,
-.dropdown2:hover .dropdown-header2 {
-  background-color: #012344;
-  height: 5vh;
-  color: #fff;
-}
-
-/*Estilização das opções*/
-.dropdown-options2 {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  font-size: small;
-}
-
-.option1{
-  animation: cachoeira1 1s;
-}
-
-.option2{
-  animation: cachoeira2 1.5s;
-}
-
-.option3{
-  animation: cachoeira3 2s;
-}
-
-.option4{
-  animation: cachoeira4 2.5s;
-}
-
-/*Animação*/
-@keyframes cachoeira1{
-  0% { 
-    opacity: 0;
-    margin: -5vw 0 0 0;
-    };
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
-}
-
-@keyframes cachoeira2{
-  0% { opacity: 0;};
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
-}
-
-@keyframes cachoeira3{
-  0% { opacity: 0;};
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
-}
-
-@keyframes cachoeira4{
-  0% { opacity: 0;};
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
-}
-
-/*Fazendo o dropdown aparecer*/
-.dropdown1:hover .dropdown-options2,
-.dropdown2:hover .dropdown-options2 {
-  display: block;
-}
-
-/*Dando tamanho ao botão de opção*/
-.dropdown-option2 {
-  padding: 5px;
-  width: 23.5vw;
-  height: 4vh;
-  font-size: small;
-  border: 1px solid #ccc;
-  border-radius: 5%;
-  background-color: #fff;
-  color: #333;
-  margin: 0;
-  z-index: 1;
-}
-
-
-/*:hover das opções*/
-.dropdown-option1:hover 
-.dropdown-option2:hover{
-  background-color: #f2f2f2;
-  cursor: pointer;
-  border-radius: 5%;
-  z-index: 1;
-}
-
 /*==================MAIN===================*/
 #divPai{
   display: flex;
@@ -431,91 +254,9 @@ header{
   font-size: 1rem;
 }
 
-/*====================FOOTER========================*/
-
-footer{
-    height: 510px;
-    width: 100%;
-    background-color: #004a8d;
-    
-}
-#footer-box{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-}
-#aFooter{
-    text-decoration: none;
-    color: white;
-  }
-#h3footer{
-  color: white;
-}
-
-footer div{
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 33%;
-    align-items:center;
-    gap: 27px;
-}
-footer img{
-    height: 50px;
-    width: 50px;
-}
-footer p{
-    text-align: center;
-    padding: 15px 0 8px 0 ;
-}
-@media(max-width:600px){
-    footer{
-        height: 350px;
-    }
-    footer h3{
-        font-size: 14px;
-    }
-    footer #afooter{
-        font-size: 11px;
-    }
-    footer img{
-        height: 30px;
-        width: 30px;
-    }
-}
-@media(min-width:1296px){
-    #footer-box{
-        width: 1296px;
-        margin: 0 auto 0 auto;
-    }
-}
-
 /*===========================MEDIA PARA TELA 2560PX===========================*/
 
 @media screen and (max-width: 2560px) {
-  .linha2{
-    display: none;
-    margin: 0 0 -2rem 0;
-  }
-
-  .coluna1 .subcol1 #logoYT,
-  .coluna1 .subcol1 #logoFace,
-  .coluna1 .subcol1 #logoInsta {
-    width: 2vw;
-    height: auto;
-  }
-  
-  .coluna2 .linha,
-  .coluna3 .linha{
-    padding: 0 0 10px 0;
-  }
-
-  .coluna2 a,
-  .coluna3 a{
-    font-size: 1rem;
-  }
-
   #curiosidadeTexto p{
     font-size: 35px;
     line-height: 3rem;
@@ -525,13 +266,6 @@ footer p{
 
 /*===========================MEDIA PARA TELA 1440PX===========================*/
 @media screen and (max-width: 1440px) {
-  .coluna1 .subcol1 #logoYT,
-  .coluna1 .subcol1 #logoFace,
-  .coluna1 .subcol1 #logoInsta {
-    width: 4vw;
-    height: auto;
-  }
-
   #curiosidadeTexto{
     font-size: 15px;
     line-height: 2rem;
@@ -755,48 +489,6 @@ footer p{
 } 
 
 
-/*==========FOOTER===========*/
-  footer{
-    height: 25vh;
-  }
-  
-  .linha2{
-    margin: 0;
-  }
-  
-  .coluna1 .subcol1 #logoInsta,
-  .coluna1 .subcol1 #logoFace,
-  .coluna1 .subcol1 #logoYT{
-    width: 7vw;
-  }
-  
-  .coluna1 a,
-  .coluna2 a,
-  .coluna3 a{
-    font-size: 10px;
-  }
-
-  .coluna2,
-  .coluna3{
-    margin: 0;
-  }
-
-  .coluna1 .linha2{
-    height: vh;
-  }
-
-  .coluna2 .linha,
-  .coluna3 .linha{
-    height: 4.5vh;
-  }
-
-  .coluna2 .linha,
-  .coluna3 .linha{
-    margin: 0;
-  }
-
-}
-
 
 
 /*===========================MEDIA PARA TELA 375PX===========================*/
@@ -823,21 +515,7 @@ footer p{
     font-size: 10px;
   }
 
-/*==========FOOTER===========*/
-  footer{
-    height: 26vh;
-  }
 
-  .coluna1 .linha2{
-    height: 9vh;
-  }
-  
-  .coluna2 .linha,
-  .coluna3 .linha{
-    justify-content: left;
-  }
-
-}
 
 
 
@@ -846,10 +524,6 @@ footer p{
 
 /*===========================MEDIA PARA TELA 320PX===========================*/
 @media screen and (max-width: 321px) {
-  footer{
-    height: 20vh;
-  }
-
   .linha2{
     margin: 0 0 -20px 0;
   }
@@ -891,5 +565,7 @@ footer p{
     line-height: 0.5rem;
     padding: 0;
   } 
+}
+}
 }
 }

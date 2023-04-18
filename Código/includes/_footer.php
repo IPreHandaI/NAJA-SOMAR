@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-include_once '_head.php';
-?>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <title>Document</title>
+</head>
 <body>
     
-</body>
-</html>
 
     <footer>
         <div id="footer-box">
@@ -22,7 +24,7 @@ include_once '_head.php';
                 <a id="aFooter">Ana Luiza Santos</a>
                 <a id="aFooter">Arthur Da Silva</a>
                 <a id="aFooter">João Gabriel Gotardo</a>
-                <a id="aFooter">Júlia Magalhães</a>
+                <a id="aFooter">Júlia Guimarães</a>
                 <a id="aFooter">Nicolas Diovani</a>
             </div>
             <div>
