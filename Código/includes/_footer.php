@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="../CSS/footer.css">
 <?php
 include_once '_head.php';
 ?>
