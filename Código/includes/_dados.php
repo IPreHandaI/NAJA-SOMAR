@@ -2,150 +2,162 @@
 $ods=array(
     0=>array(
         "projeto1" => array(
-            "titulo"=>"Brownie classic",
-            "link"=>"imagens/1.png",
+            "nome"=>"Brownie classic",
+            "img"=>"imagens/1.png",
             "h3"=>"Objetivo de Desenvolvimento Sustentável",
-            "num"=>"1",
+            "img"=>"1",
             "h1"=>"Erradicação da pobreza",
             "h2"=>"Erradicar a pobreza em todas as formas e em todos os lugares"
         ),
         
         "projeto2" => array(
-            "titulo"=>"Arthur",
-            "link"=>"imagens/1.png",
+            "nome"=>"Arthur",
+            "img"=>"imagens/1.png",
             "h3"=>"Objetivo de Desenvolvimento Sustentável",
-            "num"=>"1",
+            "img"=>"1",
             "h1"=>"Erradicação da pobreza",
             "h2"=>"Erradicar a pobreza em todas as formas e em todos os lugares"
         ),
     ),
     1=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/2.png",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/2.png",
         "h3"=>"",
-        "num"=>"2",
+        "img"=>"2",
         "h1"=>"",
         "h2"=>""
     ),
     2=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/3.jpg",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/3.jpg",
         "h3"=>"",
-        "num"=>"3",
+        "img"=>"3",
         "h1"=>"",
         "h2"=>""
     ),
     3=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/4.webp",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/4.webp",
         "h3"=>"",
-        "num"=>"4",
+        "img"=>"4",
         "h1"=>"",
         "h2"=>""
     ),
     4=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/5.gif",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/5.gif",
         "h3"=>"",
-        "num"=>"5",
+        "img"=>"5",
         "h1"=>"",
         "h2"=>""
     ),
     5=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/6.png",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/6.png",
         "h3"=>"",
-        "num"=>"6",
+        "img"=>"6",
         "h1"=>"",
         "h2"=>""
     ),
     6=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/7.png",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/7.png",
         "h3"=>"",
-        "num"=>"7",
+        "img"=>"7",
         "h1"=>"",
         "h2"=>""
     ),
     7=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/8.png",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/8.png",
         "h3"=>"",
-        "num"=>"8",
+        "img"=>"8",
         "h1"=>"",
         "h2"=>""
     ),
     8=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/9.png",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/9.png",
         "h3"=>"",
-        "num"=>"9",
+        "img"=>"9",
         "h1"=>"",
         "h2"=>""
     ),
     9=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/10.webp",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/10.webp",
         "h3"=>"",
-        "num"=>"10",
+        "img"=>"10",
         "h1"=>"",
         "h2"=>""
     ),
     10=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/11.jpg",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/11.jpg",
         "h3"=>"",
-        "num"=>"11",
+        "img"=>"11",
         "h1"=>"",
         "h2"=>""
     ),
     11=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/12.png",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/12.png",
         "h3"=>"",
-        "num"=>"12",
+        "img"=>"12",
         "h1"=>"",
         "h2"=>""
     ),
     12=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/13.png",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/13.png",
         "h3"=>"",
-        "num"=>"13",
+        "img"=>"13",
         "h1"=>"",
         "h2"=>""
     ),
     13=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/14.png",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/14.png",
         "h3"=>"",
-        "num"=>"14",
+        "img"=>"14",
         "h1"=>"",
         "h2"=>""
     ),
     14=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/15.png",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/15.png",
         "h3"=>"",
-        "num"=>"15",
+        "img"=>"15",
         "h1"=>"",
         "h2"=>""
     ),
     15=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/16.webp",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/16.webp",
         "h3"=>"",
-        "num"=>"16",
+        "img"=>"16",
         "h1"=>"",
         "h2"=>""
     ),
     16=>array(
-        "titulo"=>"Brownie classic",
-        "link"=>"imagens/17.png",
+        "nome"=>"Brownie classic",
+        "img"=>"imagens/17.png",
         "h3"=>"",
-        "num"=>"17",
+        "img"=>"17",
         "h1"=>"",
         "h2"=>""
     )
     );
+
+    
+    $sql = '';
+
+    foreach ($ods as $i => $value) {
+        $h3 = $value['h3'];
+        $img = $value['img'];
+        $h1 = $value['h1'];
+        $h2 = $value['h2'];
+
+        $sql = "$sql <br> INSERT INTO produtos(h3, img, h1, h2, categoriaid, ativo) VALUE('$h3', '$img', '$h1', '$h2', 1, 1);";
+    }
 ?>
