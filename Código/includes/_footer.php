@@ -11,14 +11,14 @@ include_once '_head.php';
     <footer>
         <div id="footer-box">
             <div>
-                <h3 id="h3footer">Navegação</h3>
+                <h3>Navegação</h3>
                 <a>Home</a>
                 <a>SOMAR</a>
                 <a>Contato</a>
                 <a>ODS</a>
             </div>
             <div>
-                <h3 id="h3footer">Desenvolvedores</h3>
+                <h3>Desenvolvedores</h3>
                 <a>Ana Luiza Santos</a>
                 <a>Arthur Da Silva</a>
                 <a>João Gabriel Gotardo</a>
@@ -26,7 +26,7 @@ include_once '_head.php';
                 <a>Nicolas Diovani</a>
             </div>
             <div>
-                <h3 id="h3footer">Contato</h3>
+                <h3>Contato</h3>
                 <a><img src="imagens/facebook.png"></a>
                 <a><img src="imagens/instagram.webp"></a>
                 <a><img src="imagens/whatsapp.png"></a>
