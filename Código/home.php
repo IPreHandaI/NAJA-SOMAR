@@ -104,7 +104,7 @@ include_once 'includes/_dados.php';
         <form action="pagina-ods.php" method="GET">
         <input type="number" style="visibility:hidden; display:none;" name="butao" value="<?php echo $i?>">
         <button style="border:none; cursor:pointer;">
-                <img src="<?php echo $ods[$i]["link"] ?>">
+                <img src="<?php echo $ods[$i]["img"] ?>">
             </button>
             </form>
         <?php
