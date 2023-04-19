@@ -185,7 +185,11 @@
 
 /*========================ODS=========================*/
 
-
+.colTituloOds{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
 #cards{
   display: flex;
