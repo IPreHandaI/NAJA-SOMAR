@@ -5,19 +5,8 @@
 }
 
 /*==================MAIN===================*/
-#divPai{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0 6rem 0;
-}
-
-#divFilho{
-  background-color: #f5f4f4;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+html{
+    background-color: #f5f4f4;
 }
 
 #principios{
@@ -27,120 +16,67 @@
   justify-content: center;
   margin: 0 0 4rem 0;
 }
-
-
-
 /*=================CAROUSEL======================*/
-.slider{
-  margin: 0 auto;
-  width: 100%;
+
+.swiffy-slider{
   height: 500px;
-  overflow: hidden;
+  width: 75%;
+  margin: 0 auto 30px auto;
 }
-
-.slides{
-  width: 400%;
-  height: 500px;
-  display: flex;
+.swiffy-slider img{
+  margin: 0 auto 30px auto;
+  width: auto;
+  object-fit: cover;
+  height: 100%;
 }
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  width: 25%;
-  position: relative;
-  background-repeat: no-repeat; 
-  background-position: center; 
-  height: 500px;
-  transition: 2s;
-}
-
-.slide img{
-  max-width: 100%;
-  height: 600px;
-  object-fit: contain;
-}
-
-.manual-navigation{
-  position: absolute;
-  width: 100%;
-  margin: -40px 0 0 0;
+.swiffy-slider li{
   display: flex;
   justify-content: center;
-  align-items: center;
+  height: 500px;
 }
-
-.manual-btn{
-  border: 2px solid rgb(0, 0, 0);
-  padding: 5px;
-  border-radius:  10px;
-  cursor: pointer;
-  transition: 0.5s;
+.slider-nav.slider-nav-next::after {
+  transform: rotate(180deg);
+  background-color: black;
 }
-
-.manual-btn:not(:last-child){
-  margin-right: 1rem;
+.slider-nav::after {
+  background-color: black;
 }
-
-.manual-btn:hover{
-  background-color: rgb(0, 0, 0);
+@media (max-width:800px){
+  .swiffy-slider{
+    height: 350px;
+    width: 85%;
+    margin: 0 auto 0 auto;
+  }
+  .swiffy-slider li{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+  }
 }
-
-#radio1:checked ~ .first{
-  margin-left: 0;
+@media (max-width:500px){
+  .swiffy-slider{
+    height: 250px;
+    width: 85%;
+    margin: 0 auto 0 auto;
+  }
+  .swiffy-slider li{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+  }
 }
-
-#radio2:checked ~ .first{
-  margin-left: -25%;
+@media (max-width:350px){
+  .swiffy-slider{
+    height: 300px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+  .swiffy-slider li{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+  }
 }
-
-#radio3:checked ~ .first{
-  margin-left: -50%;
-}
-
-#radio4:checked ~ .first{
-  margin-left: -75%;
-}
-
-.navigation-auto div{
-  border: 2px solid pink;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.navigation-auto{
-  position: absolute;
-  width: 100%;
-  margin-top: 460px;
-  display: flex;
-  justify-content: center;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 1rem;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background-color: #000000;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background-color: #000000;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background-color: #000000;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background-color: #000000;
-}
-
-
 /*========================CARDS=========================*/
 .card-deck {
   display: flex;
@@ -179,9 +115,6 @@
   font-size: small;
   margin: 0.5rem 0;
 }
-
-
-
 
 /*========================ODS=========================*/
 
@@ -333,36 +266,6 @@
     font-size: 1rem;
   }
 
-/*==========CAROUSEL===========*/  
-  .slide img{
-    width: 400px;
-  }
-
-  .slider{
-    height: 200px;
-  }
-  
-  .slides{
-    height: 200px;
-  }
-
-  .manual-btn{
-    padding: 3px;
-  }
-
-  .navigation-auto div{
-    padding: 3px;
-  }
-
-  .manual-navigation{
-    margin: -16px 0 0 0;
-  }
-
-  .navigation-auto{
-    margin: 11.5rem 0 0 0;
-  }
-  
-
 /*==========CARDS===========*/
   #principios strong{
     font-size: 1.5rem;
@@ -412,40 +315,6 @@
   #divPai{
     margin: 0 0 2rem 0;
   }
-
-
-/*==========CAROUSEL===========*/
-.slide img{
-  width: 200px;
-}
-
-.slider{
-  height: 100px;
-}
-
-.slides{
-  height: 100px;
-}
-
-.manual-btn{
-  padding: 2px;
-}
-
-.navigation-auto div{
-  padding: 2px;
-}
-
-.manual-navigation{
-  margin: -10px 0 0 0;
-}
-
-.navigation-auto{
-  margin: 5.6rem 0 0 0;
-}
-
-
-
-
 
 /*==========CARDS===========*/
 #principios{
