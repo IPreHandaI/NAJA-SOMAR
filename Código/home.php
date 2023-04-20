@@ -1,3 +1,5 @@
+<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 <?php
 
 include_once 'includes/_header.php';
@@ -8,50 +10,22 @@ include_once 'includes/_dados.php';
     <div id="divFilho">
 
     <!--========================CAROUSEL===============================-->
-        <div class="slider">
-            <div class="slides">
-                <!-- Bolinhas -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
+    <div class="swiffy-slider">
+    <ul class="slider-container">
+        <li><img src="./imagens/1.png" style="max-width: 100%;height: auto;"></li>
+        <li><img src="./imagens/2.png" style="max-width: 100%;height: auto;"></li>
+        <li><img src="./imagens/fecomercio.webp" style="max-width: 100%;height: auto;"></li>
+    </ul>
 
-                <!--Slide imagens-->
-                <div class="slide first h-100" style="background-image: url(./imagens/ImgSemImg.png);">
-                </div>
-                <div class="slide h-100" style="background-image: url(./imagens/ImgSemImg2.jfif);">
-                </div>
-                <div class="slide h-100" style="background-image: url(./imagens/ImgSemImg.png);">
-                </div>
-                <div class="slide h-100" style="background-image: url(./imagens/ImgSemImg2.jfif);">
-                </div>
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
 
-                <!--AutoNavegação-->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-            </div>
-
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-        </div>
+    <div class="slider-indicators">
+        <button class="active" style="background-color:gray;"></button>
+        <button style="background-color:gray;"></button>
+        <button style="background-color:gray;"></button>
     </div>
 </div>
-<!--==================FIM DO CAROUSEL=====================-->
-
-
-<div id="principios">
-    <strong>Princípios</strong>
-</div>
-
-
 <!--=====================CARDS======================-->
     <div class="card-deck">
         <div class="card card1">
