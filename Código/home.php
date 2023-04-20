@@ -72,7 +72,7 @@ include_once 'includes/_dados.php';
 
 <!--=================================ODS=============================================-->
 <div class="colTituloOds">
-    <h1>Conheça Nossos Projetos!</h1>
+    <h1 style="margin-bottom:40px;">Conheça Nossos Projetos!</h1>
 </div>
 <div id="cards">
     <?php
