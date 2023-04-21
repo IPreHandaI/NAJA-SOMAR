@@ -5,7 +5,7 @@
 include_once 'includes/_header.php';
 include_once 'includes/_dados.php';
 ?>
-<link rel="stylesheet" href="../CSS/home.css">
+<link rel="stylesheet" href="CSS/home.css">
 <div id="divPai">
     <div id="divFilho">
 

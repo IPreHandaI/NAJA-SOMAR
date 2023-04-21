@@ -1,9 +1,10 @@
 <?php
 $ido = $_GET["butao"];
 include_once 'includes/_header.php';
-include_once 'includes/_dados.php'
+include_once 'includes/_dados.php';
+include_once 'includes/_bancoconn.php';
 ?>
-    <link rel="stylesheet" href="../CSS/pagina-ods.css">
+    <link rel="stylesheet" href="CSS/pagina-ods.css">
     <div id="box-pai">
         <div class="box-filha">
             <img class="img-1" src="<?php echo $ods[$ido]["img"] ?>">

@@ -116,6 +116,13 @@
 
 
 /*===================================TIME LINE=====================================*/
+#h2Trajetoria{
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+}
+
 #h2Trajetoria h2{
     font-size: 2.8rem;
 }
@@ -352,7 +359,7 @@
     }
   }
   .timeline{
-    display: reltive;
+    display: relative;
    
   }
 
@@ -361,3 +368,70 @@
   border-style: solid;
   border-image: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff) 1;
 }
+
+
+/*=======================ODS=======================*/
+.colTituloOds{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+#tituloOds{
+  color: black;
+
+}
+
+#cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  justify-content:center;
+  margin: 0 auto 7rem auto;
+  gap:1rem;
+}
+#cards img {
+  width: 100%;
+  height: 100%;
+}
+#cards button {
+  width: 100%;
+  height: 100%;
+}
+#cards form{
+  width: 15%;
+  transition: transform 0.2s;
+}
+#cards form:hover {
+  transform: scale(1.2); /* Aumentando o tamanho */
+  z-index: 1; /* Ajustando a ordem de empilhamento */
+}
+
+/* Ajustando a origem da transformação */
+#cards form:not(:first-child) {
+  transform-origin: center center;
+}
+
+/* Impedindo que as imagens encolham */
+#cards form:first-child {
+  flex-shrink: 0;
+}
+@media (max-width:1024px){
+  #cards form {
+    width: 18%;
+  }
+}
+@media (max-width:764px){
+  #cards form {
+    width: 21%;
+  }
+}
+@media (max-width:500px){
+  #cards form {
+    width: 25%;
+  }
+}
+
+

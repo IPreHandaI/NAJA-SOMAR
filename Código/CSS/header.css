@@ -209,3 +209,41 @@ header{
   height: 10vh;
   z-index: 1;
 }
+
+
+@media screen and (max-width: 769px) {
+  #logo{
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #logo{
+    width: 34%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  #logo{
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  #logo{
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #logo{
+    width: 57%;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  #logo{
+    width: 53%;
+    margin: 0.5rem;
+  }
+}
