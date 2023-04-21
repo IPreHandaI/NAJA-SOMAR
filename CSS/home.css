@@ -252,11 +252,6 @@ html{
 
 /*===========================MEDIA PARA TELA 768X===========================*/
 @media screen and (max-width: 768px) {
-  #logo{
-    width: 20%;
-    margin: 1rem 0 0 1rem;
-  }
-
   .dropdown-header1,
   .dropdown-header2{
     font-size: 1rem;
@@ -306,10 +301,6 @@ html{
 
 /*===========================MEDIA PARA TELA 425PX===========================*/
 @media screen and (max-width: 445px) {
-  #logo{
-    width: 40%;
-    margin: 1.5rem 0 0 1rem;
-  }
 
 /*==========MAIN===========*/
   #divPai{
@@ -373,10 +364,6 @@ html{
 
 /*===========================MEDIA PARA TELA 375PX===========================*/
 @media screen and (max-width: 375px){
-  #logo{
-    width: 5vw;
-    margin: 0.5rem 0 0 1rem;
-  }
 
 /*==========CARDS===========*/
   .card:not(:last-child){

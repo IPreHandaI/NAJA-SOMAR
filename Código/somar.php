@@ -63,7 +63,8 @@ include_once 'includes/_header.php';
   <h2>Trajetória SOMAR</h2>
 </div>
 
-
+<div class="esquerda">
+  
 <div class="timeline">
   <section id="cd-timeline" class="cd-container">
 		<div class="cd-timeline-block">
@@ -143,6 +144,14 @@ include_once 'includes/_header.php';
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime earum incidunt delectus possimus ullam libero totam, magni dolore nisi dolor cupiditate, dicta hic, dolorem quae sit debitis veritatis? Voluptatibus, consequatur.</p>			
       </div> 
     </div> 
+</div>
+</div>
+
+
+<div class="direita">
+  a
+</div>
+
       <!-- fim block 6 -->
 	</section> 
   </div>

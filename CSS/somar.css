@@ -120,6 +120,14 @@
     font-size: 2.8rem;
 }
 
+#esquerda{
+  float: left;
+}
+
+#direita{
+  float: right;
+}
+
 .cd-container {
     width: 90%;
     max-width: 1080px;
@@ -252,16 +260,7 @@
       flex-wrap: wrap;
       justify-content: center;
     }
-      li {
-        background: #40484D;
-        border-radius: 2px;
-        display: inline-block;
-        padding: 2px 10px;
-        color: rgba(255,255,255,0.7);
-        margin: 3px 2px;
-        text-align: center;
-        flex-grow: 1;
-      }
+
 
   .cd-timeline-content:after {
     content: "";

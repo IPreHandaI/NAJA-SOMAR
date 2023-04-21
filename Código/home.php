@@ -11,21 +11,21 @@ include_once 'includes/_dados.php';
 
     <!--========================CAROUSEL===============================-->
     <div class="swiffy-slider">
-    <ul class="slider-container">
-        <li><img src="./imagens/1.png" style="max-width: 100%;height: auto;"></li>
-        <li><img src="./imagens/2.png" style="max-width: 100%;height: auto;"></li>
-        <li><img src="./imagens/fecomercio.webp" style="max-width: 100%;height: auto;"></li>
-    </ul>
+        <ul class="slider-container">
+            <li><img src="./imagens/1.png" style="max-width: 100%;height: auto;"></li>
+            <li><img src="./imagens/2.png" style="max-width: 100%;height: auto;"></li>
+            <li><img src="./imagens/fecomercio.webp" style="max-width: 100%;height: auto;"></li>
+        </ul>
 
-    <button type="button" class="slider-nav"></button>
-    <button type="button" class="slider-nav slider-nav-next"></button>
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
 
-    <div class="slider-indicators">
-        <button class="active" style="background-color:gray;"></button>
-        <button style="background-color:gray;"></button>
-        <button style="background-color:gray;"></button>
+        <div class="slider-indicators">
+            <button class="active" style="background-color:gray;"></button>
+            <button style="background-color:gray;"></button>
+            <button style="background-color:gray;"></button>
+        </div>
     </div>
-</div>
 <!--=====================CARDS======================-->
     <div class="card-deck">
         <div class="card card1">

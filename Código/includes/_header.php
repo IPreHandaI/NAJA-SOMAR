@@ -11,6 +11,22 @@
 <body>
 
     <header>
+        <div>
+            <ul class="rede">
+                <li id="redes">
+                    <a href="https://www.fecomercio-rs.org.br/home" target="_blank">FECOMÉRCIO</a>
+                </li>
+                <li id="redes">
+                    <a href="https://www.sesc.com.br" target="_blank">SESC</a>
+                </li>
+                <li id="redes">
+                    <a href="https://www.senacrs.com.br" target="_blank">SENAC</a>
+                </li>
+                <li id="redes">
+                    <a href="https://www.portaldocomercio.org.br" target="_blank">CNC</a>
+                </li>
+            </ul>
+        </div>
         <div class="colsheader">
             <div class="headercol headercol1">
                 <div>
