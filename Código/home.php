@@ -4,6 +4,8 @@
 
 include_once 'includes/_header.php';
 include_once 'includes/_dados.php';
+include_once 'includes/_bancoconn.php';
+
 ?>
 <link rel="stylesheet" href="CSS/home.css">
 <div id="divPai">

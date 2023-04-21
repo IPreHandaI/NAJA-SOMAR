@@ -1,5 +1,6 @@
 <?php
 include_once 'includes/_header.php';
+include_once 'includes/_bancoconn.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,0 +1,13 @@
+.teste .esquerda{
+    width: 50%;
+    height: 10vh;
+    background-color: aqua;
+    float: left;
+}
+
+.teste .direita{
+    width: 50%;
+    height: 10vh;
+    background-color: blue;
+    float: right;
+}
