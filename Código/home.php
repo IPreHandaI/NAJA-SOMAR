@@ -1,5 +1,4 @@
-<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
 <?php
 
 include_once 'includes/_header.php';
@@ -10,24 +9,26 @@ include_once 'includes/_bancoconn.php';
 <link rel="stylesheet" href="CSS/home.css">
 <div id="divPai">
     <div id="divFilho">
-
     <!--========================CAROUSEL===============================-->
-    <div class="swiffy-slider">
-        <ul class="slider-container">
-            <li><img src="./imagens/1.png" style="max-width: 100%;height: auto;"></li>
-            <li><img src="./imagens/2.png" style="max-width: 100%;height: auto;"></li>
-            <li><img src="./imagens/fecomercio.webp" style="max-width: 100%;height: auto;"></li>
-        </ul>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+        <div class="swiffy-slider">
+            <ul class="slider-container">
+                <li><img src="./imagens/banner.jpg" style="max-width: 100%;height: auto;"></li>
+                <li><img src="./imagens/2.png" style="max-width: 100%;height: auto;"></li>
+                <li><img src="./imagens/fecomercio.webp" style="max-width: 100%;height: auto;"></li>
+            </ul>
 
-        <button type="button" class="slider-nav"></button>
-        <button type="button" class="slider-nav slider-nav-next"></button>
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
 
-        <div class="slider-indicators">
-            <button class="active" style="background-color:gray;"></button>
-            <button style="background-color:gray;"></button>
-            <button style="background-color:gray;"></button>
+            <div class="slider-indicators">
+                <button class="active" style="background-color:gray;"></button>
+                <button style="background-color:gray;"></button>
+                <button style="background-color:gray;"></button>
+            </div>
         </div>
-    </div>
 <!--=====================CARDS======================-->
     <div class="card-deck">
         <div class="card card1">
