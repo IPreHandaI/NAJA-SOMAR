@@ -39,7 +39,7 @@
                     <a>Selecione</a>
                 </div>
                     <div class="dropdown-options2">
-                        <div class="dropdown-option2 option1" value="opcao1">
+                        <div class="dropdown-option2 option1" value="opcao1" style="width:80%;">
                             <p id="p">Opção 1</p>    
                         </div>
                         <div class="dropdown-option2 option2" value="opcao2">

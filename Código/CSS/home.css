@@ -200,19 +200,6 @@ html{
 
 }
 
-
-
-/*===========================MEDIA PARA TELA 768X===========================*/
-@media screen and (max-width: 769px) {
-  .dropdown-header1,
-  .dropdown-header2{
-    font-size: 1rem;
-  }
-
-  .dropdown-option2{
-    font-size: 1rem;
-  }
-
 /*==========CARDS===========*/
   #principios strong{
     font-size: 1.5rem;
@@ -221,36 +208,6 @@ html{
   .card1{
     display: none;
   }
-
-/*===========================MEDIA PARA TELA 703PX===========================*/
-@media screen and (max-width: 703px){
-  .dropdown-header1,
-  .dropdown-header2{
-    width: 15vw;
-    font-size: 1rem;
-  }
-
-  .colsheader .headercol1{
-    width: 40%;
-  }
-
-  .colsheader .headercol2{
-    width: 30%;
-  }
-
-}
-
-
-/*===========================MEDIA PARA TELA 575PX===========================*/
-@media screen and (max-width: 575px){
-  .dropdown1,
-  .dropdown2{
-    display: none;
-  }
-}
-
-
-
 /*===========================MEDIA PARA TELA 425PX===========================*/
 @media screen and (max-width: 445px) {
 
@@ -380,16 +337,19 @@ html{
 }
 }
 }
-}
-  /*=================CAROUSEL======================*/
 
+  /*=================CAROUSEL======================*/
+#div-filho{
+  margin-top: 50px;
+}
   .swiffy-slider{
     height: 500px;
     width: 75%;
     margin: 0 auto 30px auto;
+    overflow: none;
 }
 .swiffy-slider img{
-    margin: 0 auto 30px auto;
+  margin: 0 auto 30px auto;
     width: auto;
     object-fit: cover;
     height: 100%;
@@ -444,12 +404,13 @@ html{
 @media (min-width:1024px){
     div.swiffy-slider{
         width: 1024px;
-        margin: 0 auto 0 auto;
     }
     .swiffy-slider li{
         width: 1024px;
-        margin: 0 auto 0 auto;
     }
+    .swiffy-slider li{
+      width: 1024px;
+  }
     .slider-container{
         width: 1024px;
     }

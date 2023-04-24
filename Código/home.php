@@ -29,6 +29,7 @@ include_once 'includes/_bancoconn.php';
                 <button style="background-color:gray;"></button>
             </div>
         </div>
+    </div>
 <!--=====================CARDS======================-->
     <div class="card-deck">
         <div class="card card1">
