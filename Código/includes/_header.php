@@ -28,8 +28,8 @@
             </ul>
         </div>
         <div class="colsheader">
-            <div class="headercol headercol1">
-                <div>
+            <div class="headercol headercol1" >
+                <div id="logo-centro">
                     <img id="logo" src="imagens/logo.png">
                 </div>
             </div>

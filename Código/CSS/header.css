@@ -54,9 +54,18 @@ header{
 
 #logo{
     width: 20%;
-    height: auto;
     margin: 0.5rem;
 }
+#logo-centro{
+  margin: auto 0 auto 0;
+}
+@media (min-width:320px){
+  #logo{
+    width: 60%;
+    margin: auto 0 auto 0;
+}
+}
+
 .colsheader .headercol2,
 .colsheader .headercol3,
 .colsheader .headercol4,
