@@ -12,11 +12,11 @@
         </div>
         <div>
             <h3>Desenvolvedores</h3>
-            <a>Ana Luiza Santos</a>
-            <a>Arthur Da Silva</a>
-            <a>João Gabriel Gotardo</a>
-            <a>Júlia Magalhães</a>
-            <a>Nicolas Diovani</a>
+            <a href="https://github.com/IPreHandaI">Ana Luiza Santos</a>
+            <a href="">Arthur Da Silva</a>
+            <a href="https://github.com/JoaoGGotardo">João Gabriel Gotardo</a>
+            <a href="https://github.com/juliaguima">Júlia Guimarães</a>
+            <a href="https://github.com/nicolasdiovani">Nicolas Diovani</a>
         </div>
         <div>
             <h3>Contato</h3>
