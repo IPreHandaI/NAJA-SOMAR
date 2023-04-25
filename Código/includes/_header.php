@@ -27,9 +27,25 @@
             </ul>
         <nav>
             <img src="imagens/logo.png" alt="">
-            <div>
-                <button>Opção 1</button>
-                <button>Opção 2</button>
+            <div id="caixa-pai">
+                <div class="caixa-filho">
+                    <p>Opção 2</p>
+                    <div>
+                        <a href="">opçao</a>
+                        <a href="">opçao</a>
+                        <a href="">opçao</a>
+                        <a href="">opçao</a>
+                    </div>
+                </div>
+                <div class="caixa-filho">
+                    <p>Opção 2</p>
+                    <div>
+                        <a href="">opçao</a>
+                        <a href="">opçao</a>
+                        <a href="">opçao</a>
+                        <a href="">opçao</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
