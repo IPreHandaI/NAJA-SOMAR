@@ -26,13 +26,11 @@
                 </li>
             </ul>
         <nav>
-        <style>
-
-</style>
             <img src="imagens/logo.png" alt="">
             <div id="caixa-pai">
-                <div class="dropdown">
-                <button>opção</button>
+                
+                <div class="dropdown"> 
+                    <button><p>opção</p>
                     <div class="dropdown-escondido">
                         <ul>
                             <li>nicolas</li>
@@ -41,9 +39,10 @@
                             <li>ana</li>
                         </ul>
                     </div>
+                </button>
                 </div>
-                <div class="dropdown">
-                    <button>opção</button>
+                <div class="dropdown"> 
+                    <button><p>opção</p>
                     <div class="dropdown-escondido">
                         <ul>
                             <li>nicolas</li>
@@ -52,6 +51,7 @@
                             <li>ana</li>
                         </ul>
                     </div>
+                </button>
                 </div>
             </div>
         </nav>
