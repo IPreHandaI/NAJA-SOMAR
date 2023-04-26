@@ -23,7 +23,6 @@ header{
   font-size: 0.8rem;
   transition: 0.5s;
 }
-
 .rede #redes a:hover{
   color: rgb(233, 230, 255);
 }
@@ -47,9 +46,13 @@ nav img{
 .dropdown button{
   width: 100%;
   text-align: center;
-  height: 100%;
+  height: 50px;
   border: none;
   background-color: rgba(196, 37, 37, 0);
+}
+.dropdown button p{
+  margin: auto 0 auto 0;
+  padding: 17.5px 0px;
 }
 .dropdown {
   display: flex;
@@ -68,6 +71,9 @@ nav img{
   width: 100%;
   z-index: 1;
   border-top: none;
+  animation-name: exemplo;
+  animation-duration:0.75s;
+  position: relative;
 }
 .dropdown-escondido ul{
   list-style: none;
@@ -85,10 +91,8 @@ nav img{
 }
 .dropdown:hover .dropdown-escondido {
   display: block;
-  position: relative;
-  top: 100px;
 }
-/* @keyframes cachoeira1{
+@keyframes exemplo{
   0% { 
     opacity: 0;
     margin: -5vw 0 0 0;
@@ -96,21 +100,8 @@ nav img{
   50% { opacity: 0.5;};
   100% { opacity: 1;};
 }
-
-@keyframes cachoeira2{
-  0% { opacity: 0;};
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
+@media(min-width:768px){
+  .caixa-pai{
+    display: none;
+  }
 }
-
-@keyframes cachoeira3{
-  0% { opacity: 0;};
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
-}
-
-@keyframes cachoeira4{
-  0% { opacity: 0;};
-  50% { opacity: 0.5;};
-  100% { opacity: 1;};
-} */
