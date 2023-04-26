@@ -13,16 +13,21 @@
         <div>
             <h3>Desenvolvedores</h3>
             <a href="https://github.com/IPreHandaI">Ana Luiza Santos</a>
-            <a href="">Arthur Da Silva</a>
+            <a href="https://github.com/arthurw6">Arthur Da Silva</a>
             <a href="https://github.com/JoaoGGotardo">João Gabriel Gotardo</a>
             <a href="https://github.com/juliaguima">Júlia Guimarães</a>
             <a href="https://github.com/nicolasdiovani">Nicolas Diovani</a>
         </div>
         <div>
             <h3>Contato</h3>
+            <!-- Facebook botton -->
             <a><img src="imagens/facebook.png"></a>
+            <!-- Instagram botton -->
             <a><img src="imagens/instagram.webp"></a>
-            <a><img src="imagens/whatsapp.png"></a>
+            <!-- Whatsapp botton -->
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/XXXXXXXXX"> 
+            <img alt="Chat on WhatsApp" src="imagens/whatsapp.png" height="400px" width="680px"/> </a>
+            <!-- Youtube botton -->
             <a><img src="imagens/youtube.png"></a>
         </div>
     </div>
