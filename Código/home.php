@@ -3,11 +3,11 @@
 
 include_once 'includes/_header.php';
 include_once 'includes/_dados.php';
-include_once 'includes/_bancoconn.php';
+//include_once 'includes/_bancoconn.php';
 
 ?>
 <?php
-    echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"/>';
+    //echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"/>';
 ?>
 
 <link rel="stylesheet" href="CSS/home.css">

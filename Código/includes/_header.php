@@ -26,24 +26,31 @@
                 </li>
             </ul>
         <nav>
+        <style>
+
+</style>
             <img src="imagens/logo.png" alt="">
             <div id="caixa-pai">
-                <div class="caixa-filho">
-                    <p>Opção 2</p>
-                    <div>
-                        <a href="">opçao</a>
-                        <a href="">opçao</a>
-                        <a href="">opçao</a>
-                        <a href="">opçao</a>
+                <div class="dropdown">
+                <button>opção</button>
+                    <div class="dropdown-escondido">
+                        <ul>
+                            <li>nicolas</li>
+                            <li>julia</li>
+                            <li>joao</li>
+                            <li>ana</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="caixa-filho">
-                    <p>Opção 2</p>
-                    <div>
-                        <a href="">opçao</a>
-                        <a href="">opçao</a>
-                        <a href="">opçao</a>
-                        <a href="">opçao</a>
+                <div class="dropdown">
+                    <button>opção</button>
+                    <div class="dropdown-escondido">
+                        <ul>
+                            <li>nicolas</li>
+                            <li>julia</li>
+                            <li>joao</li>
+                            <li>ana</li>
+                        </ul>
                     </div>
                 </div>
             </div>
