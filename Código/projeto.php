@@ -1,6 +1,8 @@
 <?php
 
 include_once 'includes/_header.php';
+include_once 'includes/_bancoconn.php';
+include_once 'includes/_dados.php';
 
 ?>
 
@@ -40,6 +42,30 @@ include_once 'includes/_header.php';
       <img src="https://via.placeholder.com/300x200.png" alt="Imagem do card">
       </div>
     </div>
+
+    <div id="h1Div">
+        <h1 id="h1Projetos">Parceiros:</h1>
+    </div>
+    <div id="card-container">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200.png" alt="Imagem do card">
+        <h3 style="font-size: 1.5vw">Título do Card</h3>
+        <p style="font-size: 1vw">Esxplicação sobre o Parceiro</p>
+        <button class="buttonCard">Botão</button class="buttonCard">
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200.png" alt="Imagem do card">
+        <h3 style="font-size: 1.5vw">Nome do Parceiro</h3>
+        <p style="font-size: 1vw">Esxplicação sobre o Parceiro</p>
+        <button class="buttonCard">Botão</button class="buttonCard">
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200.png" alt="Imagem do card">
+        <h3 style="font-size: 1.5vw">Nome do Parceiro</h3>
+        <p style="font-size: 1vw">Esxplicação sobre o Parceiro</p>
+        <button class="buttonCard">Botão</button class="buttonCard">
+      </div>
+    </div>
 </aside>
 
 
@@ -57,6 +83,25 @@ include_once 'includes/_header.php';
     <p class="texto">Lorem ipsum dolor sit amet consectetur <strong> adipisicing </strong> elit. Dolorem, corporis ipsa debitis facere ullam magni et, libero suscipit odio iste esse sint cumque accusamus sunt eos atque repellat delectus tenetur commodi illum? Quod architecto unde sequi quis aut magnam, earum facere voluptates eum ad voluptatum ut <strong>consectetur</strong> quaerat iste quam excepturi explicabo facilis ducimus voluptatem, provident eos magni nulla error voluptatibus! Accusamus iste consequuntur fugit, unde molestias facilis qui rem magnam, vero et corrupti tempore, itaque ut sunt? Illum, facilis voluptatibus ullam quaerat sapiente, dolores quam praesentium totam autem quia, <strong>accusantium</strong> provident delectus odio molestias quasi? Provident, quos laboriosam.</p>
     <img id="imgArticle" src="imagens/ImgSemImg.png">
     <p class="texto">Lorem ipsum dolor sit amet consectetur <strong> adipisicing </strong> elit. Dolorem, corporis ipsa debitis facere ullam magni et, libero suscipit odio iste esse sint cumque accusamus sunt eos atque repellat delectus tenetur commodi illum? Quod architecto unde sequi quis aut magnam, earum facere voluptates eum ad voluptatum ut <strong>consectetur</strong> quaerat iste quam excepturi explicabo facilis ducimus voluptatem, provident eos magni nulla error voluptatibus! Accusamus iste consequuntur fugit, unde molestias facilis qui rem magnam, vero et corrupti tempore, itaque ut sunt? Illum, facilis voluptatibus ullam quaerat sapiente, dolores quam praesentium totam autem quia, <strong>accusantium</strong> provident delectus odio molestias quasi? Provident, quos laboriosam.</p>
+
+    <div class="colTituloOds">
+      <h1 style="margin-bottom:40px;">Veja Nossos Outros Projetos!</h1>
+    </div>
+    <div id="cards">
+        <?php
+            for($i=0;$i<count($ods);$i++){
+        ?>
+        <form action="pagina-ods.php" method="GET">
+          <input type="number" style="visibility:hidden; display:none;" name="butao" value="<?php echo $i?>">
+          <button style="border:none; cursor:pointer;">
+            <img src="<?php echo $ods[$i]["img"] ?>">
+          </button>
+        </form>
+        <?php
+            }
+        ?>
+    </div>
+
 </article>
 
 <?php
