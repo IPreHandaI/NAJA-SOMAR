@@ -3,7 +3,7 @@
 
 include_once 'includes/_header.php';
 include_once 'includes/_dados.php';
-//include_once 'includes/_bancoconn.php';
+include_once 'includes/_bancoconn.php';
 
 ?>
 <?php
