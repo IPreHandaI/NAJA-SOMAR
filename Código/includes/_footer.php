@@ -1,3 +1,9 @@
+<?php
+
+include_once 'includes/_bancoconn.php';
+
+?>
+
 
 <link rel="stylesheet" href="CSS/footer.css">
 

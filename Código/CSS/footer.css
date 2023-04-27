@@ -3,6 +3,7 @@ footer{
   width: 100%;
   background-color: #004a8d;
   color: white;
+  overflow: hidden;
 }
 #footer-box{
   display: flex;
@@ -15,7 +16,15 @@ footer h3{
 }
 footer a{
   font-size: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
 }
+
+footer a:hover{
+  color: rgb(190, 190, 190);
+}
+
 footer div{
   display: flex;
   flex-direction: column;
