@@ -5,29 +5,6 @@ include_once 'includes/_header.php';
 include_once 'includes/_dados.php';
 include_once 'includes/_bancoconn.php';
 
-$servername = "localhost";
-$database = "somar";
-$username ="root";
-$password = "";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-// Query para recuperar o caminho da imagem do banco de dados
-$sql = "SELECT imagem FROM imagens WHERE imgid = 1"; // Supondo que o ID da imagem que você quer exibir seja 1
-
-$resultado = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($resultado) > 0) {
-    $row = mysqli_fetch_assoc($resultado);
-    $imagem = $row["imagem"];
-    echo "<img src='$imagem' alt='Minha imagem'>";
-} else {
-    echo "Nenhum resultado encontrado.";
-}
 
 ?>
 

@@ -85,17 +85,13 @@ include_once 'includes/_bancoconn.php';
 </div>
 <div id="cards">
     <?php
-            for($i=0;$i<count($ods);$i++){
-        ?>
-        <form action="pagina-ods.php" method="GET">
-        <input type="number" style="visibility:hidden; display:none;" name="butao" value="<?php echo $i?>">
-        <button style="border:none; cursor:pointer;">
-                <img src="<?php echo $ods[$i]["img"] ?>">
-            </button>
-            </form>
-        <?php
-            }
-        ?>
+        while ($row = mysqli_fetch_assoc($resultado)) {
+            echo '<form action="pagina-ods.php" method="GET">';
+            echo '<input type="number" style="visibility:hidden; display:none;" name="butao" value="'.$row['odsid'].'">';
+            echo '<button style="border:none; cursor:pointer;"><img src="'.$row['Imagem'].'"></button>';
+            echo '</form>';
+        }
+    ?>
 </div>
 
 <!--======================CURIOSIDADE==============================-->

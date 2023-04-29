@@ -71,11 +71,11 @@ include_once 'includes/_bancoconn.php';
                     <h1>
                         Lorem ipsum dolor
                     </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum odio nec est facilisis porta. Suspendisse in mauris interdum, rutrum ipsum ut, condimentum lacus. Mauris feugiat scelerisque mi consectetur porttitor. Phasellus dapibus quis metus nec varius. Nullam vulputate, mi a vulputate auctor, dui sapien maximus lorem, vel molestie leo lacus quis ipsum. Suspendisse lacinia at purus sit amet feugiat. Nunc placerat porttitor metus, a feugiat est fermentum sed. Nam pharetra ex id vulputate pulvinar. Nulla pretium suscipit sapien ac placerat.<br>
-
-                        Etiam nisi erat, maximus in aliquam vel, pellentesque a dolor. Donec et pharetra augue, sit amet commodo nibh. Sed nec sodales orci, id ultrices erat. Sed aliquam dui quis viverra sodales. In aliquam a diam sit amet posuere. Nulla sagittis varius ex sed fermentum. Nam tempus tellus tortor, vitae iaculis nisi pretium ac. Aenean finibus facilisis suscipit. Sed ut ante eget augue tincidunt facilisis. Sed eu est ac nunc congue dictum nec quis massa. Integer suscipit sapien ac condimentum viverra. Integer eleifend gravida euismod.<br>
-                    </p>
+                    <?php
+                        while ($linha = mysqli_fetch_assoc($resultado)) {
+                            echo "<a>" . $linha['Sobre'] . "</a> <br>";
+                        }
+                    ?>
                 </div>
             </div>
         </main>
