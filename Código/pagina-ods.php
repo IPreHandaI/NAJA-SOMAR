@@ -46,26 +46,6 @@ include_once 'includes/_bancoconn.php';
                             </div>
                         </div>
                     </div>
-                    <div class="box-filha">
-                        <img class="img-1" src="<?php echo $ods[$ido]["img"] ?>" alt="Imagem do Card">
-                        <div class="box-neta">
-                            <h3><?php echo $ods[$ido]["h3"] ?></h3>
-                            <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-                            <div>
-                                <h4>Lorem ipsum</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-filha">
-                        <img class="img-1" src="<?php echo $ods[$ido]["img"] ?>" alt="Imagem do Card">
-                        <div class="box-neta">
-                            <h3><?php echo $ods[$ido]["h3"] ?></h3>
-                            <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-                            <div>
-                                <h4>Lorem ipsum</h4>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div id="box-pai-1">
                     <h1>

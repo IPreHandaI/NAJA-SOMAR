@@ -53,11 +53,14 @@ header{
   width: 33%;
   height: 40px;
   z-index: 1;
-  border: 1px solid black;
-  border-radius: 10px;
   display: inline-block;
   margin:20px 10% 0 2%;
 }
+
+.dropdown:hover{
+  background-color: #004a8d;
+}
+
 .dropdown p{
   text-align: center;
   padding: 12px 0;
@@ -66,8 +69,8 @@ header{
 .dropdown-escondido {
   display: none;
   margin-left:-1px;
-  border:1px solid black;
-  width: 100%;
+  border: 0.1rem solid #004a8d;
+  width: 98%;
   z-index: 1;
   border-top: none;
   animation-name: dropdown;

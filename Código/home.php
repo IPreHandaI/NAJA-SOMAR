@@ -36,6 +36,10 @@ include_once 'includes/_bancoconn.php';
         </div>
     </div>
 <!--=====================CARDS======================-->
+
+<div class="principiosTitulo">
+    <h1>Princípios</h1>
+</div>
     <div class="card-deck">
         <div class="card card1">
             <img src="imagens/sustentabilidade.png" class="cardImg" alt="Imagem 1">

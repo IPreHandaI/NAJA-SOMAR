@@ -13,12 +13,7 @@ if (!$conn) {
 }
 
 // Consulta SQL para obter as informações das imagens
-$sql = "SELECT odsid, Imagem FROM ods";
+$sql = "SELECT odsid, Imagem, Sobre FROM ods";
 
 $resultado = mysqli_query($conn, $sql);
-
-// Exiba as imagens em um formulário HTML
-
-
-mysqli_close($conn);
 ?>
