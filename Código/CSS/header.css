@@ -2,14 +2,13 @@
 header{
     margin: 0 0 30px 0;
     height: 100px;
-    background-color: white;
 }
 
 .rede{
   background-color: #004a8d;
   padding: 0.5rem;
   display: flex;
-  height: 20%;
+  height: 20px;
   list-style-type: none;
 }
 
@@ -26,54 +25,55 @@ header{
 .rede #redes a:hover{
   color: rgb(233, 230, 255);
 }
-nav{
-  height: 80%;
+.nav-pc{
+  height: 80px;
   width: 100%;
-  background-color: rgb(234, 238, 253);
   display: flex;
+  background-color: white;
   justify-content: space-between;
+  border-bottom: #004a8d 2px solid;
 }
-nav img{
+.nav-pc img{
   height: 80%;
   margin: auto 0 auto 0;
 }
 #caixa-pai{
   height: 100%;
   width: 30%;
-  display: flex;
-  justify-content: space-around;
+  z-index: 1;
 }
 .dropdown button{
   width: 100%;
-  text-align: center;
-  height: 50px;
+  height: 100%;
   border: none;
   background-color: rgba(196, 37, 37, 0);
 }
-.dropdown button p{
-  margin: auto 0 auto 0;
-  padding: 17.5px 0px;
-}
 .dropdown {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  width: 40%;
-  margin: 14px 0;
+  height:auto;
+  width: 33%;
+  height: 40px;
   z-index: 1;
   border: 1px solid black;
-  justify-content: space-around;
+  border-radius: 10px;
+  display: inline-block;
+  margin:20px 10% 0 2%;
+}
+.dropdown p{
+  text-align: center;
+  padding: 12px 0;
+  width: 100%;
 }
 .dropdown-escondido {
   display: none;
-  left: -1px;
+  margin-left:-1px;
   border:1px solid black;
   width: 100%;
   z-index: 1;
   border-top: none;
-  animation-name: exemplo;
+  animation-name: dropdown;
   animation-duration:0.75s;
-  position: relative;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
 }
 .dropdown-escondido ul{
   list-style: none;
@@ -84,15 +84,18 @@ nav img{
   width: 100%;
 }
 .dropdown-escondido li:hover{
-  background-color: burlywood;
+  color: white;
+  background-color: #004a8d;
 }
 .dropdown:hover{
   border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  transition: 0.5s;
 }
 .dropdown:hover .dropdown-escondido {
   display: block;
 }
-@keyframes exemplo{
+@keyframes dropdown{
   0% { 
     opacity: 0;
     margin: -5vw 0 0 0;
@@ -100,8 +103,74 @@ nav img{
   50% { opacity: 0.5;};
   100% { opacity: 1;};
 }
-@media(min-width:768px){
-  .caixa-pai{
+@media(max-width:799px){
+  .nav-pc{
+    display: none;
+  }
+  .nav-cel{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    border-bottom: #004a8d 2px solid;
+    align-items: center;
+  }
+  #logo{
+    height: 60px;
+  }
+  #buguer{
+    height: 40px;
+    padding: 15px;
+  }
+  #hamburguer-div{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+  }
+  #dropdown-escondido-2{
+    display: none;
+    top: 82px;
+    position: absolute;
+    z-index: 1;
+    width: 250%;
+    background-color: rgb(255, 255, 255);
+  }
+  #dropdown-escondido-2 ul{
+    list-style: none;
+  }
+  #dropdown-escondido-2 ul li{
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 0;
+  }
+  #dropdown-escondido-2 ul li:hover{
+    color: white;
+    background-color: #004a8d;
+  }
+  #hamburguer-div:hover #dropdown-escondido-2{
+    animation-name: escondido2;
+    display: block;
+    animation-duration:0.75s;
+    border: 2px solid #004a8d;
+    border-left: none;
+    border-top: none;
+  }
+  .nav-cel h2{
+    text-align: center;
+    padding: 10px 0;
+  }
+  @keyframes escondido2{
+    0% { 
+      opacity: 0;
+      margin: 0 0 0 -5vw;
+      };
+    50% { opacity: 0.5;};
+    100% { opacity: 1;};
+  }
+}
+@media(min-width:800px){
+  .nav-cel{
     display: none;
   }
 }
