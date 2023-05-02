@@ -25,35 +25,52 @@
                     <a href="https://www.portaldocomercio.org.br" target="_blank">CNC</a>
                 </li>
             </ul>
-        <nav>
-            <img src="imagens/logo.png" alt="">
-            <div id="caixa-pai">
-                
-                <div class="dropdown"> 
-                    <button><p>opção</p>
-                    <div class="dropdown-escondido">
-                        <ul>
-                            <li>nicolas</li>
-                            <li>julia</li>
-                            <li>joao</li>
-                            <li>ana</li>
-                        </ul>
-                    </div>
-                </button>
-                </div>
-                <div class="dropdown"> 
-                    <button><p>opção</p>
-                    <div class="dropdown-escondido">
-                        <ul>
-                            <li>nicolas</li>
-                            <li>julia</li>
-                            <li>joao</li>
-                            <li>ana</li>
-                        </ul>
-                    </div>
-                </button>
+        <div class="nav-cel">
+            <img id="buguer"src="imagens/menuhamburguer.png" alt="">
+            <img id="logo" src="imagens/logo.png" alt="">
+            <a href="login.php"><img width="35px" style="margin:0 10px 0 35px" src="imagens/conta.png" alt=""></a>
+            <div id="hamburguer-div">
+                <div id="dropdown-escondido-2">
+                    <h2>teste</h2>
+                    <ul>
+                        <li>nicolas</li>
+                        <li>julia</li>
+                        <li>joao</li>
+                        <li>ana</li>
+                    </ul>
                 </div>
             </div>
-        </nav>
+        </div>
+        <div class="nav-pc">
+            <img src="imagens/logo.png" alt="">
+            <div id="caixa-pai">
+                <div class="dropdown"> 
+                    <button>
+                            <p>opção</p>
+                        <div class="dropdown-escondido">
+                            <ul>
+                                <li>nicolas</li>
+                                <li>julia</li>
+                                <li>joao</li>
+                                <li style="border-radius: 0 0 9px 9px;">ana</li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+                <div class="dropdown"> 
+                    <button>
+                        <p>opção</p>
+                        <div class="dropdown-escondido">
+                            <ul>
+                                <li>nicolas</li>
+                                <li>julia</li>
+                                <li>joao</li>
+                                <li style="border-radius: 0 0 9px 9px;">ana</li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
