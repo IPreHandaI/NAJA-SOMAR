@@ -55,10 +55,16 @@ header{
   z-index: 1;
   display: inline-block;
   margin:20px 10% 0 2%;
+  border-radius: 0.5vw;
+  transition: 0.5s;
 }
 
 .dropdown:hover{
   background-color: #004a8d;
+}
+
+.dropdown p:hover{
+  color: white;
 }
 
 .dropdown p{
@@ -90,11 +96,7 @@ header{
   color: white;
   background-color: #004a8d;
 }
-.dropdown:hover{
-  border-bottom: none;
-  border-radius: 10px 10px 0 0;
-  transition: 0.5s;
-}
+
 .dropdown:hover .dropdown-escondido {
   display: block;
 }

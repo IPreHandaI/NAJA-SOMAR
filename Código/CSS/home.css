@@ -16,52 +16,6 @@ html{
   justify-content: center;
   margin: 0 0 4rem 0;
 }
-/*========================CARDS=========================*/
-.principiosTitulo{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 5rem 0 0 0;
-}
-
-.card-deck {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1.5rem;
-  margin: 5rem 0;
-}
-
-.card {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.cardImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 40%;
-  margin: 0 auto;
-}
-
-.card-body {
-  max-width: 60%;
-  margin: 10px auto;
-  text-align: center;
-}
-
-.card-title{
-  font-size: large;
-  margin: 0.5rem 0;
-}
-
-.card-text{
-  text-align: justify;
-  font-size: small;
-  margin: 0.5rem 0;
-}
-
 /*========================ODS=========================*/
 
 .colTituloOds{
@@ -126,9 +80,6 @@ html{
     width: 25%;
   }
 }
-
-
-
 
 /*====================CURIOSIDADE========================*/
 .curiosidade{
