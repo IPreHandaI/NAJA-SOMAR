@@ -37,7 +37,7 @@ include_once 'includes/_bancoconn.php';
             <div id="box-vo">
                 <div id="box-pai">
                     <div class="box-filha">
-                        <img class="img-1" src="<?php echo $ods[$ido]["img"] ?>" alt="Imagem do Card">
+                        <?php echo '<img class="img-1" src="' . $row['Imagem'] . '" alt="Imagem do Card">'; ?>
                         <div class="box-neta">
                             <h3><?php echo $ods[$ido]["h3"] ?></h3>
                             <h2>Lorem ipsum dolor sit amet, consectetur</h2>
