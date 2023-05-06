@@ -20,7 +20,7 @@ include_once 'includes/_bancoconn.php';
         <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
         <div class="swiffy-slider">
             <ul class="slider-container">
-                <li><img src="./imagens/banner.jpg" style="max-width: 100%;height: auto;"></li>
+                <li><img src="./imagens/ImgSemImg.png" style="max-width: 100%;height: auto;"></li>
                 <li><img src="./imagens/2.png" style="max-width: 100%;height: auto;"></li>
                 <li><img src="./imagens/fecomercio.webp" style="max-width: 100%;height: auto;"></li>
             </ul>
@@ -34,31 +34,42 @@ include_once 'includes/_bancoconn.php';
                 <button style="background-color:gray;"></button>
             </div>
         </div>
-            <div id="box-vo">
-                <div id="box-pai">
-                    <div class="box-filha">
-                        <?php echo '<img class="img-1" src="' . $row['Imagem'] . '" alt="Imagem do Card">'; ?>
-                        <div class="box-neta">
-                            <h3><?php echo $ods[$ido]["h3"] ?></h3>
-                            <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-                            <div>
-                                <h4>Lorem ipsum</h4>
-                            </div>
-                        </div>
+
+<!--=======================PROJETOS===========================-->
+
+        <div class="tiltuloProjetos">
+            <h1>PROJETOS</h1>
+        </div>
+        <div class="pai">
+            <div class="cardsProjetos">
+                <div class="cardProjetos">
+                    <img id="cardImg" src="<?php echo $ods[$ido]["img"] ?>" alt="Imagem do Card">
+                    <div class="card-content">
+                        <h3>Título do Card 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam mollitia quae praesentium omnis doloremque ut magnam, ad quia, excepturi id recusandae, error quibusdam labore nulla aspernatur? Aspernatur cum ab, aperiam rerum autem fuga? Asperiores, sed rem. Incidunt error molestias vel repellat nihil praesentium laborum.</p>
                     </div>
                 </div>
-                <div id="box-pai-1">
-                    <h1>
-                        Lorem ipsum dolor
-                    </h1>
-                    <?php
-                        while ($linha = mysqli_fetch_assoc($resultado)) {
-                            echo "<a>" . $linha['Sobre'] . "</a> <br>";
-                        }
-                    ?>
+                <div class="cardProjetos">
+                    <img id="cardImg" src="<?php echo $ods[$ido]["img"] ?>" alt="Imagem do Card">
+                    <div class="card-content">
+                        <h3>Título do Card 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam mollitia quae praesentium omnis doloremque ut magnam, ad quia, excepturi id recusandae, error quibusdam labore nulla aspernatur? Aspernatur cum ab, aperiam rerum autem fuga? Asperiores, sed rem. Incidunt error molestias vel repellat nihil praesentium laborum.</p>
+                    </div>
                 </div>
             </div>
-        </main>
+            <div id="box-pai-1">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <?php
+                    while ($linha = mysqli_fetch_assoc($resultado)) {
+                        echo "<a>" . $linha['Sobre'] . "</a> <br>";
+                    }
+                ?>
+            </div>
+        </div>
+
+<!--=============================ODS=============================-->
+
+    </main>
 <?php
 include_once 'includes/_footer.php';
 ?>

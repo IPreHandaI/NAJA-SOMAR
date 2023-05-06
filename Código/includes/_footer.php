@@ -18,11 +18,11 @@ include_once 'includes/_bancoconn.php';
         </div>
         <div>
             <h3>Desenvolvedores</h3>
-            <a href="https://github.com/IPreHandaI">Ana Luiza Santos</a>
-            <a href="https://github.com/arthurw6">Arthur Da Silva</a>
-            <a href="https://github.com/JoaoGGotardo">João Gabriel Gotardo</a>
-            <a href="https://github.com/juliaguima">Júlia Guimarães</a>
-            <a href="https://github.com/nicolasdiovani">Nicolas Diovani</a>
+            <a href="https://github.com/IPreHandaI" target="_blank">Ana Luiza Santos</a>
+            <a href="https://github.com/arthurw6" target="_blank">Arthur Da Silva</a>
+            <a href="https://github.com/JoaoGGotardo" target="_blank">João Gabriel Gotardo</a>
+            <a href="https://github.com/juliaguima" target="_blank">Júlia Guimarães</a>
+            <a href="https://github.com/nicolasdiovani" target="_blank">Nicolas Diovani</a>
         </div>
         <div>
             <h3>Contato</h3>
