@@ -1,5 +1,4 @@
 <?php
-$ido = $_GET["butao"];
 include_once 'includes/_header.php';
 include_once 'includes/_dados.php';
 include_once 'includes/_bancoconn.php';
@@ -42,20 +41,23 @@ include_once 'includes/_bancoconn.php';
         </div>
         <div class="pai">
             <div class="cardsProjetos">
-                <div class="cardProjetos">
-                    <img id="cardImg" src="<?php echo $ods[$ido]["img"] ?>" alt="Imagem do Card">
-                    <div class="card-content">
-                        <h3>Título do Card 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam mollitia quae praesentium omnis doloremque ut magnam, ad quia, excepturi id recusandae, error quibusdam labore nulla aspernatur? Aspernatur cum ab, aperiam rerum autem fuga? Asperiores, sed rem. Incidunt error molestias vel repellat nihil praesentium laborum.</p>
+                <?php while ($row = mysqli_fetch_array($resultado2)) { ?>
+                    <div class="cardProjetos">
+                        <?php
+                            $imagem = isset($_GET['imagem']) ? urldecode($_GET['imagem']) : null;
+                            if ($imagem !== null) {
+                                // exibir a imagem aqui
+                                echo '<img id="cardImg" src="'.$imagem.'">';
+                            }
+                        ?>
+                        <div class="resumo">
+                            <h3><?php echo $row['Nome']; ?></h3>
+                            <p><?php echo $row['Descricao']; ?></p>
+                        </div>
                     </div>
-                </div>
-                <div class="cardProjetos">
-                    <img id="cardImg" src="<?php echo $ods[$ido]["img"] ?>" alt="Imagem do Card">
-                    <div class="card-content">
-                        <h3>Título do Card 2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam mollitia quae praesentium omnis doloremque ut magnam, ad quia, excepturi id recusandae, error quibusdam labore nulla aspernatur? Aspernatur cum ab, aperiam rerum autem fuga? Asperiores, sed rem. Incidunt error molestias vel repellat nihil praesentium laborum.</p>
-                    </div>
-                </div>
+                <?php 
+                } 
+                ?>
             </div>
             <div id="box-pai-1">
                 <h1>Lorem ipsum dolor sit amet.</h1>

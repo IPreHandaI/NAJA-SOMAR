@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Enviando arquivos com PHP</title>
+    </head>
+    <body>
+        <form action="envia_arquivos.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="MAX_FILE_SIZE" value="300000">
+            <input name="userfile" type="file">
+            <input type="submit" value="Enviar Arquivo">
+        </form>
+
+    </body>
+</html>

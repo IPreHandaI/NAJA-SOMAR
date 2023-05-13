@@ -71,12 +71,13 @@ include_once 'includes/_bancoconn.php';
 <div id="cards">
     <?php
         while ($row = mysqli_fetch_assoc($resultado)) {
-            echo '<form action="pagina-ods.php" method="GET">';
-            echo '<input type="number" style="visibility:hidden; display:none;" name="butao" value="'.$row['odsid'].'">';
-            echo '<button style="border:none; cursor:pointer;"><img src="'.$row['Imagem'].'"></button>';
-            echo '</form>';
+            $imagem = $row['Imagem'];
+            echo '<a href="pagina-ods.php?imagem='.urlencode($imagem).'">';
+            echo '<img id="card" src="'.$imagem.'">';
+            echo '</a>';
         }
     ?>
+
 </div>
 
 <!--======================CURIOSIDADE==============================-->

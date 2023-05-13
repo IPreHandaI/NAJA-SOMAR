@@ -28,15 +28,21 @@ html{
 }
 
 #cardImg{
-    max-width: 40%;
+    max-width: 30%;
     max-height: 100vw;
     margin: 0 1vw 0 0;
 }
 
+.resumo{
+  display: block;
+}
+
 #box-pai-1 {
     width: 40%;
-    float: right;
-    padding: 0 3vw 0 2vw;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5vw;
+    text-align: justify;
     }
 
 /*=================CAROUSEL======================*/

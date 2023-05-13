@@ -135,40 +135,24 @@ html{
 }
 
 #cards{
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
   width: 90%;
   height: auto;
-  justify-content:center;
   margin:0 auto;
-  gap:1rem;
 }
+
 #cards img {
-  width: 100%;
-  height: 100%;
-}
-#cards button {
-  width: 100%;
-  height: 100%;
-}
-#cards form{
   width: 15%;
+  height: auto;
   transition: transform 0.2s;
+  margin: 0 1vw 1vw 0;
 }
-#cards form:hover {
+
+#cards img:hover {
   transform: scale(1.2); /* Aumentando o tamanho */
   z-index: 1; /* Ajustando a ordem de empilhamento */
 }
 
-/* Ajustando a origem da transformação */
-#cards form:not(:first-child) {
-  transform-origin: center center;
-}
-
-/* Impedindo que as imagens encolham */
-#cards form:first-child {
-  flex-shrink: 0;
-}
 @media (max-width:1024px){
   #cards form {
     width: 18%;
