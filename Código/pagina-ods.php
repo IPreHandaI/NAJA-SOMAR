@@ -43,29 +43,26 @@ include_once 'includes/_bancoconn.php';
             <div class="cardsProjetos">
                 <?php while ($row = mysqli_fetch_array($resultado2)) { ?>
                     <div class="cardProjetos">
-                        <?php
-                            $imagem = isset($_GET['imagem']) ? urldecode($_GET['imagem']) : null;
-                            if ($imagem !== null) {
-                                // exibir a imagem aqui
-                                echo '<img id="cardImg" src="'.$imagem.'">';
-                            }
-                        ?>
+                        <img id="cardImg" src="<?php echo $row['Imagem']; ?>">
                         <div class="resumo">
                             <h3><?php echo $row['Nome']; ?></h3>
                             <p><?php echo $row['Descricao']; ?></p>
                         </div>
                     </div>
                 <?php 
-                } 
+                    } 
                 ?>
             </div>
             <div id="box-pai-1">
                 <h1>Lorem ipsum dolor sit amet.</h1>
-                <?php
-                    while ($linha = mysqli_fetch_assoc($resultado)) {
-                        echo "<a>" . $linha['Sobre'] . "</a> <br>";
-                    }
-                ?>
+                   <p>
+                   <?php
+                        while ($row = mysqli_fetch_assoc($resultado)) {
+                            $sobre = $row['Sobre'];
+                            echo $sobre;
+                        }
+                    ?>
+                    </p>
             </div>
         </div>
 
