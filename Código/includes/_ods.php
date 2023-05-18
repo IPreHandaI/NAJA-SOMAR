@@ -13,12 +13,14 @@ include_once '_dados.php';
     <?php
             for($i=0;$i<count($ods);$i++){
         ?>
+        <!--
         <form action="pagina-ods.php" method="GET">
-        <input type="number" style="visibility:hidden; display:none;" name="butao" value="<?php echo $i?>">
+        <input type="number" style="visibility:hidden; display:none;" name="butao" value="<?php //echo $i?>">
         <button style="border:none; cursor:pointer;">
-                <img src="<?php echo $ods[$i]["img"] ?>">
+                <img src="<?php //echo $ods[$i]["img"] ?>">
             </button>
             </form>
+            -->
         <?php
             }
         ?>

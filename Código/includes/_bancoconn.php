@@ -36,7 +36,7 @@ if (isset($_GET["butao"])) {
 }
 
 
-$sql2 = "SELECT projetosid, Nome, Descricao, Imagem FROM projetos";
+$sql2 = "SELECT ID, Nome, Descricao, Imagem FROM projetos";
 $resultado2 = mysqli_query($conn, $sql2);
 
 

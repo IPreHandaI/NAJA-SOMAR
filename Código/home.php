@@ -2,7 +2,6 @@
 <?php
 
 include_once 'includes/_header.php';
-include_once 'includes/_dados.php';
 include_once 'includes/_bancoconn.php';
 
 ?>
@@ -73,7 +72,7 @@ include_once 'includes/_bancoconn.php';
         while ($row = mysqli_fetch_assoc($resultado)) {
             $imagem = $row['Imagem'];
             echo '<a href="pagina-ods.php?imagem='.urlencode($imagem).'">';
-            echo '<img id="card" src="'.$imagem.'">';
+            echo '<img id="card" name="butao" src="'.$imagem.'">';
             echo '</a>';
         }
     ?>

@@ -1,48 +1,59 @@
 <?php
-error_reporting(E_ALL);
+include_once 'includes/_bancoconn.php';
+// Verifica se o formulário foi enviado
+if (isset($_POST['submit'])) {
+    // Verifica se os arquivos foram selecionados
+    if (isset($_FILES['arquivo'])) {
+        $arquivos = $_FILES['arquivo'];
 
-$url = $_SERVER["PHP_SELF"];
-if(preg_match("/class.Upload.php/", $url)){
-    header("Location: ../index.php");
-    exit;
-}
 
-class Upload{
-    private $tipo;
-    private $nome;
-    private $tamanho;
+        // Percorre cada arquivo selecionado
+        for ($i = 0; $i < count($arquivos['name']); $i++) {
+            $arquivo = array(
+                'name' => $arquivos['name'][$i],
+                'type' => $arquivos['type'][$i],
+                'tmp_name' => $arquivos['tmp_name'][$i],
+                'error' => $arquivos['error'][$i],
+                'size' => $arquivos['size'][$i]
+            );
 
-    function UploadArquivo($arquivo, $pasta, $tipos){
-        if (!is_array($tipos)) {
-            echo "Erro: tipos inválidos.";
-            exit;
+            // Verifica se houve algum erro no upload
+            if ($arquivo['error'] === UPLOAD_ERR_OK) {
+                $nome_temporario = $arquivo['tmp_name'];
+                $nome_arquivo = $arquivo['name'];
+
+                // Lê os dados do arquivo
+                $dados_arquivo = file_get_contents($nome_temporario);
+
+                // Conecta ao banco de dados (substitua as informações de conexão conforme necessário)
+
+                // Prepara a consulta SQL para inserir o arquivo no banco de dados
+                $consulta = $conn->prepare("INSERT INTO uploads (uploadid, imagem) VALUES (?, ?)");
+                $consulta->bind_param("ss", $nome_arquivo, $dados_arquivo);
+
+                // Executa a consulta
+                if ($consulta->execute()) {
+                    echo "Arquivo enviado e armazenado no banco de dados com sucesso!";
+                } else {
+                    echo "Erro ao enviar o arquivo para o banco de dados: " . $consulta->error;
+                }
+
+                // Fecha a consulta
+                $consulta->close();
+            } else {
+                echo "Erro no upload do arquivo: " . $arquivo['error'];
+            }
         }
 
-        if(isset($arquivo) && is_uploaded_file($arquivo["tmp_name"]) && $arquivo["error"] == UPLOAD_ERR_OK)
-        {
-            $nomeOriginal = $arquivo["name"];
-            $nomeFinal = md5($nomeOriginal . date("dmYHis"));
-            $tipo = strrchr($arquivo["name"],".");
-            $tamanho = $arquivo["size"];
-
-            if(!in_array($tipo, $tipos)){
-                echo "Extensão de arquivo não permitida.";
-                exit;
-            }
-
-            if (move_uploaded_file($arquivo["tmp_name"], $pasta . $nomeFinal . $tipo)){
-                $this->nome=$pasta . $nomeFinal . $tipo;
-                $this->tipo=$tipo;
-                $this->tamanho=number_format($arquivo["size"]/1024, 2) . "KB";
-                return true;
-            }else{
-                echo "Erro ao mover o arquivo.";
-                exit;
-            }
-        } else {
-            echo "Erro ao enviar o arquivo.";
-            exit;
-        }
+        // Fecha a conexão com o banco de dados
+        $conn->close();
     }
 }
 ?>
+
+<form method="POST" enctype="multipart/form-data">
+    <label for="arquivo">Selecione até 5 arquivos:</label>
+    <input type="file" name="arquivo[]" id="arquivo" multiple accept=".jpg, .jpeg, .png, .pdf">
+    <br>
+    <input type="submit" name="submit" value="Enviar">
+</form>
