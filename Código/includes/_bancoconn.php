@@ -22,7 +22,7 @@ if (isset($_GET["butao"])) {
 
 
   // Consulta SQL para obter a imagem do botão clicado
-  $sql = "SELECT odsid, Sobre, Imagem FROM ods WHERE odsid = $ido";
+  $sql = "SELECT odsid, Sobre, Imagem, Frase FROM ods WHERE odsid = $ido";
   $resultado = mysqli_query($conn, $sql);
 
   if ($row = mysqli_fetch_assoc($resultado)) {
@@ -38,6 +38,10 @@ if (isset($_GET["butao"])) {
 
 $sql2 = "SELECT projetoid, nome, imagem, descricao FROM projeto_ods1";
 $resultado2 = mysqli_query($conn, $sql2);
+
+
+$sql3 = "SELECT idimgcarousel, imagem FROM carousel";
+$resultado3 = mysqli_query($conn, $sql3);
 
 
 ?>

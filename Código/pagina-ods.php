@@ -42,7 +42,11 @@ include_once 'includes/_bancoconn.php';
             <div class="cardsProjetos">
                 <?php while ($row = mysqli_fetch_array($resultado2)) { ?>
                     <div class="cardProjetos">
+<<<<<<< Updated upstream
                         <img id="cardImg" src="<?php echo $row['imagem']; ?>">
+=======
+                        <img class="cardImg" src="<?php echo $row['Imagem']; ?>">
+>>>>>>> Stashed changes
                         <div class="resumo">
                             <h3><?php echo $row['nome']; ?></h3>
                             <p><?php echo $row['descricao']; ?></p>
@@ -54,14 +58,22 @@ include_once 'includes/_bancoconn.php';
             </div>
             <div id="box-pai-1">
                 <h1>Lorem ipsum dolor sit amet.</h1>
-                   <p>
-                   <?php
-                        while ($row = mysqli_fetch_assoc($resultado)) {
-                            $sobre = $row['Sobre'];
-                            echo $sobre;
-                        }
-                    ?>
-                    </p>
+                <?php while ($row = mysqli_fetch_array($resultado2)) { ?>
+                    <div class="cardProjetos">
+                        <img class="cardImg" src="<?php echo $row['Imagem']; ?>">
+                        <div class="resumo">
+                            <h3><?php echo $row['Nome']; ?></h3>
+                            <p><?php echo $row['Descricao']; ?></p>
+                        </div>
+                    </div>
+                <?php 
+                    } 
+                ?>
+                <?php
+                    if ($row = mysqli_fetch_assoc($resultado)) {
+                        echo '<p id="' . $row['odsid'] . '">' . $row['Sobre'] . '</p>';
+                    }
+                ?>
             </div>
         </div>
 
