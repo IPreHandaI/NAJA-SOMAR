@@ -42,10 +42,10 @@ include_once 'includes/_bancoconn.php';
             <div class="cardsProjetos">
                 <?php while ($row = mysqli_fetch_array($resultado2)) { ?>
                     <div class="cardProjetos">
-                        <img id="cardImg" src="<?php echo $row['Imagem']; ?>">
+                        <img id="cardImg" src="<?php echo $row['imagem']; ?>">
                         <div class="resumo">
-                            <h3><?php echo $row['Nome']; ?></h3>
-                            <p><?php echo $row['Descricao']; ?></p>
+                            <h3><?php echo $row['nome']; ?></h3>
+                            <p><?php echo $row['descricao']; ?></p>
                         </div>
                     </div>
                 <?php 
