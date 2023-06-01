@@ -39,9 +39,18 @@ if (isset($_GET["butao"])) {
 $sql2 = "SELECT projetoid, nome, imagem, descricao FROM projeto_ods1";
 $resultado2 = mysqli_query($conn, $sql2);
 
-
 $sql3 = "SELECT idimgcarousel, imagem FROM carousel";
 $resultado3 = mysqli_query($conn, $sql3);
 
+$sqltotal = "SELECT projetoid, nome, imagem, descricao FROM projeto_ods2";
+$resultadototal = mysqli_query($conn, $sqltotal);
+
+/*
+$sql3 = "SELECT idimgcarousel, imagem FROM carousel";
+$resultado3 = mysqli_query($conn, $sql3);
+*/
+
+$numProjetosOds1 = mysqli_num_rows($resultado2);
+$numProjetosOds2 = mysqli_num_rows($resultado3);
 
 ?>

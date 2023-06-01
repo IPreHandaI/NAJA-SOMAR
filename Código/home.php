@@ -18,12 +18,18 @@ include_once 'includes/_bancoconn.php';
         <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
         <div class="swiffy-slider">
             <ul class="slider-container">
-                <?php
-                    // Loop através dos resultados da consulta SQL para exibir as imagens
-                    while ($row = mysqli_fetch_assoc($resultado3)) {
-                        echo '<li><img src="'.$row['Imagem'].'" style="max-width: 100%; height: auto;"></li>';
-                    }
-                ?>
+                <li>
+                    <img src="./imagens/banner.jpg" style="max-width: 100%;height: auto;">
+                </li>
+                <li>
+                    <img src="./imagens/fecomercio.webp" style="max-width: 100%;height: auto;">
+                </li>
+                <li>
+                    <img src="./imagens/2.png" style="max-width: 100%;height: auto;">
+                </li>
+                <li>
+                    <img src="./imagens/fecomercio.webp" style="max-width: 100%;height: auto;">
+                </li>
             </ul>
 
             <button type="button" class="slider-nav"></button>
