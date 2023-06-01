@@ -50,7 +50,6 @@ $sql3 = "SELECT idimgcarousel, imagem FROM carousel";
 $resultado3 = mysqli_query($conn, $sql3);
 */
 
-$numProjetosOds1 = mysqli_num_rows($resultado2);
-$numProjetosOds2 = mysqli_num_rows($resultado3);
+
 
 ?>

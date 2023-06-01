@@ -9,8 +9,10 @@ include_once 'includes/_header.php';
 <div class="fundo">
     <div class="row">
         <div id="col1" class="col">
-            <h1>aaaaa</h1>
-            <h3>aaaaaaaaaaaa</h3>
+            <div id="text">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi dignissimos accusamus ad illo ea.</h3>
+            </div>
             <div class="button-container">
                 <button id="botao1" class="meu-botao">aaa</button>
                 <button id="botao2" class="meu-botao">aaa</button>
