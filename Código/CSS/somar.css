@@ -1,6 +1,11 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.fundo{
+  background-color: #f6f6f6;
 }
 
 .fundo .row{
@@ -20,6 +25,11 @@
 #text{
   width: 70%;
   margin: 0 auto;
+  padding: 0 1vw;
+}
+
+#col1 h1{
+  margin: 0 0 2vw 0;
 }
 
 .button-container {
@@ -27,8 +37,15 @@
 }
 
 .meu-botao {
-  width: 5vw;
+
+  width: 7vw;
+  height: 2.5vw;
   font-size: 1vw;
+  margin: 2vw 0 0 0;
+  border: none;
+  background-color: #004a8d;
+  border-radius: 2vw;
+  color: white;
 }
 
 #col2{
@@ -47,4 +64,22 @@
 #imgDireita{
   width: 20vw;
   height: auto;
+}
+
+#divQuadro{
+  display: flex;
+  justify-content: center;
+}
+
+#quadro{
+  background-color: #004a8d;
+  width: 50%;
+  height: 10vw;
+  margin: 5vw 0 0 0;
+  padding: 4vw;
+}
+
+#text h2{
+  display: flex;
+  font-size: 1.5vw;
 }
